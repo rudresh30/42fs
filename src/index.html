@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" href="./lib/bootstrap-select-1.13.0/css/bootstrap-select.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/jquery-modal.css">
   <link rel="stylesheet" href="./css/custom.css">
 </head>
   <body id="bootstrap-overrides">
@@ -89,142 +90,6 @@
         </div>
       </div>
     </div>
-      <!--The modal-->
-      <!--<div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-labelledby="mymodal" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document"> 
-        <!<div class="modal-dialog">  
-          <div class="modal-content"> remove modal -->  
-            <!--Modal header-->
-            <!--<div class="modal-header">
-              <h6 class="modal-title" id="modallabel">Course Content</h6>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div> -->
-            <!--modal body-->
-            <!--<div class="modal-body">-->
-              <div id="contentslider" class="carousel slide" data-ride="carousel">
-                <!--carousel inner content-->
-                <div class="carousel-inner" id="cfp-carousel-inner" role="listbox">
-                  <!--frontend content slide-->
-                  <div class="carousel-item active">
-                    <div class="container">
-                      <div class="row">
-                        <h3 class="col-sm-11">Front End</h3> 
-                        <button type="button" class="close col-sm-1" id="btn-carousel-close"data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>    
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-12 col-lg-6">
-                          <h5>Static Website </h5>
-                          <ol class="list-group">
-                            <!--<li class="list-group-item">how to setup development environment on your workstation?</li>-->
-                            <li class="list-group-item">how to structure the website?</li>
-                            <li class="list-group-item">how to use various html elements and how to style them using css?</li>
-                            <li class="list-group-item">what is bootstrap4 and how to use it in your website?</li>
-                            <li class="list-group-item">how to enhance bootstrap's functionality?</li>
-                            <li class="list-group-item">what is responsive design and how to make your website responsive?</li>
-                          </ol>
-                        </div>
-                        <div class="cols-sm-12 col-lg-6">  
-                          <h5>Dynamic Website </h5>
-                          <ol class="list-group">
-                            <li class="list-group-item">javascript basics and Document Object Model (DOM)</li>
-                            <!--<li class="list-group-item">how to make website interactive using javascript</li>-->
-                            <li class="list-group-item">what is JQuery and how to use it to speed up development?</li>
-                            <li class="list-group-item">what is Reactjs and how it is different from other forntend frameworks like Angular?</li>
-                            <li class="list-group-item">how to create single page apps using React?</li>
-                            <li class="list-group-item">create Android and iOS apps using React-Native</li>
-                          </ol>
-                        </div> 
-                      </div>
-                    </div>
-                  </div>
-                  <!--back-end content slide-->
-                  <div class="carousel-item"> <!--back-end carousel start-->
-                    <div class="container">
-                      <div class="row">
-                        <h3 class="col-sm-11">Front End</h3> 
-                        <button type="button" class="close col-sm-1" id="btn-carousel-close-2" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>    
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <h5>Serverside Javascript Networking for Web</h5>
-                          <ol class="list-group">
-                            <li class="list-group-item">what happens on serverside? http request/response verbs</li>
-                            <li class="list-group-item">asynchronous programming using nodejs and javascript</li>
-                            <li class="list-group-item">introduction to database and sql using postgresql</li>
-                            <li class="list-group-item">what are web frameworks? Introduction to Express framework</li>
-                            <li class="list-group-item">how to create a basic website using Express</li>
-                            <li class="list-group-item">how to connect to database using Express?</li>
-                            <li class="list-group-item">how to create RESTful APIs using Express</li>
-                            <li class="list-group-item">what is MVC architecture? how to use it for separation of concerns?</li>
-                          </ol>
-                        </div>
-                      </div>
-                    </div>
-                  </div> <!--backend carousel end-->
-                  <div class="carousel-item">
-                    <div class="container">
-                      <div class="row">
-                        <h3 class="col-sm-11">Additional Learnings</h3> 
-                        <button type="button" class="close col-sm-1" id="btn-carousel-close-3" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>    
-                      </div>                      
-                      <div class="row">
-                        <div class="col-sm-12 col-lg-6">
-                          <h5>Professional Tools</h5>
-                          <ol class="list-group">
-                            <li class="list-group-item">modern editors and how to customize them</li>
-                            <li class="list-group-item">git version control system</li>
-                            <li class="list-group-item">build tools - gulpjs</li>
-                            <li class="list-group-item">how to configure a secure OS for web server - linux</li>
-                            <li class="list-group-item">how to configure Nginx with nodejs and take advantage of multiple cores</li>
-                          </ol>
-                        </div>
-                        <div class="col-sm-12 col-lg-6">
-                          <h5>Career in Tech</h5>
-                          <ul class="list-group">
-                            <li class="list-group-item">how to create your CV? what to emphasise?</li>
-                            <li class="list-group-item">how to improve your chances of being picked by a large technology company</li>
-                            <li class="list-group-item">how to create a professional linkedin profile</li>
-                            <li class="list-group-item">communication and networking skills for software engineers</li>
-                            <li class="list-group-item">interview preparation and salary negotiation at large companies</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--carousel indicators-->
-                <ol class="carousel-indicators" id="cfp-carousel-indicator">
-                  <li data-target="#contentslider" data-slide-to="0" class="active"></li>
-                  <li data-target="#contentslider" data-slide-to="1"></li>
-                  <li data-target="#contentslider" data-slide-to="2"></li>
-                </ol>
-                <!--Carousel controls - next and previous buttons-->
-                <a class="carousel-control-prev" href="#contentslider" role="button" data-slide="prev" id="cfp-carousel-prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#contentslider" role="button" data-slide="next" id="cfp-carousel-next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span>Next</span>
-                </a>
-              </div> <!--carousel slider ends-->
-               
-            <!--</div> <!modal content ends-->
-            <!--modal footer 
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btn-close-modal-ftr">Close</button>
-            </div>
-          -->
-          <!--</div> <! modal dialog ends-->
-      <!--</div> <! Modal ends -->
       <!--The slider-->
       <div class="slider">
         <div class="row">
@@ -324,6 +189,7 @@
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script> -->
     <script src="./lib/bootstrap-select-1.13.0/js/bootstrap-select.min.js"></script>
     <script src="./lib/modernizr-custom.js"></script>
+    <script src="./lib/jquery-modal.js"></script>
     <script src="./js/custom.js"></script>
   </body>
 </html>
