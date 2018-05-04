@@ -1,0 +1,283 @@
+/**{
+  border: 1px solid red !important;
+}*/
+
+.fslogo{
+  height: 20px;
+}
+
+#bootstrap-overrides{
+font-family:'Lato',sans-serif;
+}
+
+#bootstrap-overrides .navbar-custom{
+  background-color: #3AEBEE;
+}
+
+.columnA, .columnB{
+  height: 90vh;
+}
+.slider-para{
+  margin-top: 15px;
+}
+.hide{
+  display: none;
+}
+.active{
+  display: block;
+}
+
+#bootstrap-overrides a.lttreadmorebtn{
+  color: #3AEBEE;
+  cursor: pointer;
+}
+a.lttreadmorebtn:hover{
+  border-bottom: 1px blue solid;
+}
+a.lttreadlessbtn{
+  color: #3AEBEE !important;
+  cursor: pointer;
+}
+a.lttreadlessbtn:hover{
+  border-bottom: 1px blue solid;
+}
+
+
+a.gtcreadmorebtn{
+  color: #3AEBEE !important;
+  cursor: pointer;
+}
+a.gtcreadmorebtn:hover{
+  border-bottom: 1px blue solid;
+}
+a.gtcreadlessbtn{
+  color: #3AEBEE !important;
+  cursor: pointer;
+}
+a.gtcreadlessbtn:hover{
+  border-bottom: 1px blue solid;
+}
+
+
+a.mttreadmorebtn{
+  color: #3AEBEE !important;
+  cursor: pointer;
+}
+a.mttreadmorebtn:hover{
+  border-bottom: 1px blue solid;
+}
+a.mttreadlessbtn{
+  color: #3AEBEE !important;
+  cursor: pointer;
+}
+a.mttreadlessbtn:hover{
+  border-bottom: 1px blue solid;
+}
+#bootstrap-overrides .select-batch{
+  border: lightgray 0.55px solid;
+  /**-webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;*/
+  
+}
+
+#main-banner{
+  color: #1F7F80;
+  text-align: center;
+}
+
+
+#submit-button{
+  
+  color: #007E80;
+  margin-top: 15px;
+  background-color: #3AEBEE;
+  border: #3AEBEE;
+  box-shadow: 0 3px 0 0 #3FEEF1; 
+  border-radius: 24px;
+  width: 60vw;
+  text-shadow: 0 0 1px black;
+}
+
+#submit-button:hover{
+  background-color: #34D2D4;
+}
+#submit-button:active{
+  background-color: lighten(#3AEBEE,50%);
+  box-shadow: none;
+  margin-bottom: -3px;
+  margin-top: 3px;
+}
+
+.img-hero{
+  width: inherit;
+  height: inherit;
+  display: block;
+}
+
+.img-slider{
+  width:inherit;
+  height:40vh;
+  display:block;
+  margin-right: 15px;
+  padding: 10px;
+}
+
+h1{
+  font-size: 2.4rem;
+}
+.sub-head{
+  font-size: 1.0625rem;
+}
+.main-head{
+  margin-top: 10px;
+}
+.text-brand{
+  font-size: 1rem;
+}
+.slider{
+  margin-top: 10px;
+}
+.fs-hero-img{
+  padding: 15px;
+}
+#batch-select{
+  margin-top: 10px;
+}
+#modallabel{
+  font-size: 1.5rem;
+}
+#bootstrap-overrides .modal-dialog{
+  width: 90vw;
+  height: auto;
+  padding: 0;
+}
+#bootstrap-overrides .modal-content{
+  height: auto;
+  width: 85vw;
+}
+
+#bootstrap-overrides .modal-body{
+  height: inherit;
+}
+/*#contentslider{
+  height: inherit;
+}*/
+
+#btn-carousel-close #btn-carousel-close-2 #btn-carousel-close-3{
+  text-align: center;
+}
+#cfp-carousel-indicator #cfp-carousel-next #cfp-carousel-prev{
+  color: #3AEBEE;
+  background-color: #007E80;
+}
+/*on mobile devices*/
+@media (min-width: 544px){
+  h1{font-size: 3.2rem;
+  }
+  .sub-head{font-size: 1.125rem;
+    color: blue;
+  }
+  .text-brand{
+    font-size: 1rem;
+    color: blue;
+  } 
+  #submit-button{
+    margin-top: 10px;
+  }
+  #bootstrap-overrides .modal-dialog{
+    max-width: 100%;
+    width: 90vw;
+    height: auto;
+    padding: 0;
+    margin-top: 1.25rem;
+  }
+  #bootstrap-overrides .modal-content{
+    height: auto;
+    width: 80vw;
+  }
+  
+}
+/*on tablets*/
+@media (min-width: 768px){
+  h1{font-size: 4rem;
+  }
+  .sub-head{font-size: 1.2rem;
+    color: orange;
+  }  
+  .text-brand{
+    font-size: 1rem;
+    color: orange;
+  }
+  #bootstrap-overrides .modal-dialog{
+    width: 98vw;
+    height: 92vh;
+    padding: 0;
+  }
+  #bootstrap-overrides .modal-content{
+    height: 98vh;
+    width: 84vw;
+  }
+
+}
+/*on small dekstops and laptops*/
+@media (min-width: 992px){
+  h1{font-size: 4.8rem;
+  }
+  .sub-head{font-size: 1.25rem;
+    color: green;
+  }  
+  .text-brand{
+    font-size: 1rem;
+    color: green;
+  }
+  #submit-button{
+    margin-top: 0px;
+    font-size: 2rem;
+    width: 15vw;
+  }
+  #email-div{
+    text-align: center;
+  }
+  #modallabel{
+    font-size: 1.5rem;
+  }
+  #bootstrap-overrides .modal-dialog{
+    width: 90vw;
+    height: 80vh;
+    padding: 0;
+  }
+  #bootstrap-overrides .modal-content{
+    height:75vh;
+    width: 80vw;
+  }
+}
+/* on large desktops*/
+@media (min-width: 1200px){
+  h1{font-size: 4.8rem;
+  }
+  .sub-head{font-size: 1.25rem;
+    color: gray;
+  }  
+  .text-brand{
+    font-size: 1.25rem;
+    color: gray;
+  }
+  #submit-button{
+    margin-top: 0px;
+    font-size: 2rem;
+    width: 15vw;
+  }
+  #email-div{
+    text-align: center;
+  }
+  #bootstrap-overrides .modal-dialog{
+    width: 90vw;
+    height: 90vh;
+    padding: 0;
+  }
+  #bootstrap-overrides .modal-content{
+    height:85vh;
+    width: 80vw;
+  }
+}
