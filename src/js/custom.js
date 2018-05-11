@@ -41,6 +41,12 @@ $(document).ready(function(){
     $('#input-email').height($('#submit-button').height());
     $('#batch-select').height($('#submit-button').height());
 
+    $("#submit-button").click(function(){
+        $("html,body").animate({
+            scrollTop: $(".course-content").offset().top},
+            'slow');
+    });
+
     //media queries using modernizr
     //on very small screens
     $(window).resize(function(){

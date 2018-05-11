@@ -89,13 +89,13 @@ a.mttreadlessbtn:hover{
 
 #submit-button{
   
-  color: #007E80;
+  color: #FFFFFF;
   margin-top: 15px;
-  background-color: #3AEBEE;
+  background-color: #1B6D6E;
   border: #3AEBEE;
-  box-shadow: 0 3px 0 0 #3FEEF1; 
+  box-shadow: 0 3px 0 0 #000000; 
   border-radius: 24px;
-  width: 60vw;
+  width: auto;
   text-shadow: 0 0 1px black;
 }
 
@@ -171,6 +171,16 @@ h1{
   color: #3AEBEE;
   background-color: #007E80;
 }
+#cfp-fe-btn{
+  width: 80vw;
+}
+#cfp-fe-chevdown{
+  padding-left: 10px;
+}
+#batch-select{
+  font-size: 0.75rem;
+}
+
 /*on mobile devices*/
 @media (min-width: 544px){
   h1{font-size: 3.2rem;
