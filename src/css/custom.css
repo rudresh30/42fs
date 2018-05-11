@@ -78,7 +78,7 @@ a.mttreadlessbtn:hover{
   /**-webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;*/
-  
+
 }
 
 #main-banner{
@@ -88,12 +88,12 @@ a.mttreadlessbtn:hover{
 
 
 #submit-button{
-  
+
   color: #FFFFFF;
   margin-top: 15px;
   background-color: #1B6D6E;
   border: #3AEBEE;
-  box-shadow: 0 3px 0 0 #000000; 
+  box-shadow: 0 3px 0 0 #000000;
   border-radius: 24px;
   width: auto;
   text-shadow: 0 0 1px black;
@@ -191,7 +191,7 @@ h1{
   .text-brand{
     font-size: 1rem;
     color: blue;
-  } 
+  }
   #submit-button{
     margin-top: 10px;
   }
@@ -206,7 +206,7 @@ h1{
     height: auto;
     width: 80vw;
   }
-  
+
 }
 /*on tablets*/
 @media (min-width: 768px){
@@ -214,7 +214,7 @@ h1{
   }
   .sub-head{font-size: 1.2rem;
     color: orange;
-  }  
+  }
   .text-brand{
     font-size: 1rem;
     color: orange;
@@ -236,7 +236,7 @@ h1{
   }
   .sub-head{font-size: 1.25rem;
     color: green;
-  }  
+  }
   .text-brand{
     font-size: 1rem;
     color: green;
@@ -268,7 +268,7 @@ h1{
   }
   .sub-head{font-size: 1.25rem;
     color: gray;
-  }  
+  }
   .text-brand{
     font-size: 1.25rem;
     color: gray;

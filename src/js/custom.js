@@ -47,6 +47,10 @@ $(document).ready(function(){
             'slow');
     });
 
+
+    //hero image html element
+    let imageHtml = `<img class="img-hero img-rounded img-responsive fs-hero-img" id="hero-image" src="./images/coding.svg" />`;
+    let imageDiv = `<div class="col-sm-12 col-lg-6 order-lg-1 columnA" id="hero-image-div"></div>`;
     //media queries using modernizr
     //on very small screens
     $(window).resize(function(){
@@ -81,5 +85,3 @@ $(document).ready(function(){
         }
     }).resize(); // causes an initial resize to occur
 });
-
-
