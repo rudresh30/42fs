@@ -14,9 +14,13 @@ font-family:'Lato',sans-serif;
   background-color: #3AEBEE;
 }
 
-.columnA, .columnB{
-  height: 90vh;
+#main-hero-section{
+  background-image: linear-gradient(rgba(0, 125, 51, 0.8), rgba(0, 125, 51,0.5)),url('../images/word-art-420-540.png');
+  background-repeat: no-repeat;
+  height: 80vh;
+
 }
+
 .slider-para{
   margin-top: 15px;
 }
@@ -109,11 +113,6 @@ a.mttreadlessbtn:hover{
   margin-top: 3px;
 }
 
-.img-hero{
-  width: inherit;
-  height: inherit;
-  display: block;
-}
 
 .img-slider{
   width:inherit;
@@ -138,39 +137,8 @@ h1{
 .slider{
   margin-top: 10px;
 }
-.fs-hero-img{
-  padding: 15px;
-}
-#batch-select{
-  margin-top: 10px;
-}
-#modallabel{
-  font-size: 1.5rem;
-}
-#bootstrap-overrides .modal-dialog{
-  width: 90vw;
-  height: auto;
-  padding: 0;
-}
-#bootstrap-overrides .modal-content{
-  height: auto;
-  width: 85vw;
-}
 
-#bootstrap-overrides .modal-body{
-  height: inherit;
-}
-/*#contentslider{
-  height: inherit;
-}*/
 
-#btn-carousel-close #btn-carousel-close-2 #btn-carousel-close-3{
-  text-align: center;
-}
-#cfp-carousel-indicator #cfp-carousel-next #cfp-carousel-prev{
-  color: #3AEBEE;
-  background-color: #007E80;
-}
 #cfp-fe-btn{
   width: 80vw;
 }
@@ -179,6 +147,7 @@ h1{
 }
 #batch-select{
   font-size: 0.75rem;
+  margin-top: 10px;
 }
 
 /*on mobile devices*/
@@ -195,18 +164,9 @@ h1{
   #submit-button{
     margin-top: 10px;
   }
-  #bootstrap-overrides .modal-dialog{
-    max-width: 100%;
-    width: 90vw;
-    height: auto;
-    padding: 0;
-    margin-top: 1.25rem;
+  #main-hero-section{
+      background-image: linear-gradient(rgba(0, 125, 51, 0.9), rgba(0, 125, 51,0.8)),url('../images/word-art-960-640.png');
   }
-  #bootstrap-overrides .modal-content{
-    height: auto;
-    width: 80vw;
-  }
-
 }
 /*on tablets*/
 @media (min-width: 768px){
@@ -219,16 +179,9 @@ h1{
     font-size: 1rem;
     color: orange;
   }
-  #bootstrap-overrides .modal-dialog{
-    width: 98vw;
-    height: 92vh;
-    padding: 0;
+  #main-hero-section{
+      background-image: linear-gradient(rgba(0, 125, 51, 0.9), rgba(0, 125, 51,0.8)),url('../images/word-art-1024-768.png');
   }
-  #bootstrap-overrides .modal-content{
-    height: 98vh;
-    width: 84vw;
-  }
-
 }
 /*on small dekstops and laptops*/
 @media (min-width: 992px){
@@ -246,20 +199,8 @@ h1{
     font-size: 2rem;
     width: 15vw;
   }
-  #email-div{
-    text-align: center;
-  }
-  #modallabel{
-    font-size: 1.5rem;
-  }
-  #bootstrap-overrides .modal-dialog{
-    width: 90vw;
-    height: 80vh;
-    padding: 0;
-  }
-  #bootstrap-overrides .modal-content{
-    height:75vh;
-    width: 80vw;
+  #main-hero-section{
+      background-image: linear-gradient(rgba(0, 125, 51, 0.9), rgba(0, 125, 51,0.8)),url('../images/word-art-1024-768.png');
   }
 }
 /* on large desktops*/
@@ -278,16 +219,8 @@ h1{
     font-size: 2rem;
     width: 15vw;
   }
-  #email-div{
-    text-align: center;
-  }
-  #bootstrap-overrides .modal-dialog{
-    width: 90vw;
-    height: 90vh;
-    padding: 0;
-  }
-  #bootstrap-overrides .modal-content{
-    height:85vh;
-    width: 80vw;
+  #main-hero-section{
+      background-image: linear-gradient(rgba(0, 125, 51, 0.9), rgba(0, 125, 51,0.8)),url('../images/word-art-test-1024-720.png');
+      background-repeat: repeat-x;
   }
 }
