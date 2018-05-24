@@ -15,9 +15,9 @@
 }
 
 #main-hero-section {
-  background-image: linear-gradient(rgba(128, 128, 128, 0.8), rgba(128, 128, 128, 0.5)), url('../images/word-art-420-540.png');
+  background-image: linear-gradient(rgba(96, 96, 96, 0.3), rgba(96, 96, 96, 0.3)), url('../images/tree-544.jpg');
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 85vh;
 }
 
 .slider-para {
@@ -179,9 +179,7 @@ h1 {
   #submit-button {
     margin-top: 10px;
   }
-  #main-hero-section {
-    background-image: linear-gradient(rgba(0, 125, 51, 0.9), rgba(0, 125, 51, 0.8)), url('../images/word-art-960-640.png');
-  }
+  #main-hero-section {}
 }
 
 /*on tablets*/
@@ -199,7 +197,7 @@ h1 {
     color: orange;
   }
   #main-hero-section {
-    background-image: linear-gradient(rgba(128, 128, 128, 0.9), rgba(128, 128, 128, 0.8)), url('../images/word-art-1024-768.png');
+    background-image: linear-gradient(rgba(96, 96, 96, 0.3), rgba(96, 96, 96, 0.3)), url('../images/tree-960.jpg');
   }
 }
 
@@ -223,7 +221,7 @@ h1 {
     width: 15vw;
   }
   #main-hero-section {
-    background-image: linear-gradient(rgba(128, 128, 128, 0.9), rgba(128, 128, 128, 0.8)), url('../images/word-art-1024-768.png');
+    background-image: linear-gradient(rgba(96, 96, 96, 0.3), rgba(96, 96, 96, 0.3)), url('../images/tree-1024.jpg');
   }
 }
 
@@ -247,8 +245,8 @@ h1 {
     width: 20vw;
   }
   #main-hero-section {
-    /*background-image: linear-gradient(rgba(153, 255, 153, 0.8), rgba(153, 255, 153, 0.3)), url('../images/forest-shadow.jpg');*/
-    background-image: url('../images/forest-shadow-1280-800.png');
+    background-image: linear-gradient(rgba(96, 96, 96, 0.3), rgba(96, 96, 96, 0.3)), url('../images/tree-1280.jpg');
+    /*background-image: url('../images/technology-1-1200-800.jpg');*/
     background-repeat: repeat-x;
   }
 }
