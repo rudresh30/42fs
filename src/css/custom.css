@@ -15,8 +15,9 @@
 }
 
 #main-hero-section {
-  background-image: linear-gradient(rgba(96, 96, 96, 0.3), rgba(96, 96, 96, 0.3)), url('../images/tree-544.jpg');
+  background-image: linear-gradient(rgba(96, 96, 96, 0.9), rgba(96, 96, 96, 0.6)), url('../images/mountain-1-320.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
   height: 85vh;
 }
 
@@ -93,9 +94,11 @@ a.mttreadlessbtn:hover {
   border-radius: 20px;*/
 }
 
-#main-banner {
-  color: #1F7F80;
+.main-banner {
+  color: #3aebee;
   text-align: center;
+  text-shadow: 1px 1px 1px #000;
+  display: inline-block;
 }
 
 #submit-button {
@@ -131,10 +134,16 @@ a.mttreadlessbtn:hover {
 
 h1 {
   font-size: 2.4rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000;
 }
 
 .sub-head {
   font-size: 1.0625rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .main-head {
@@ -170,7 +179,6 @@ h1 {
   }
   .sub-head {
     font-size: 1.125rem;
-    color: blue;
   }
   .text-brand {
     font-size: 1rem;
@@ -190,14 +198,13 @@ h1 {
   }
   .sub-head {
     font-size: 1.2rem;
-    color: orange;
   }
   .text-brand {
     font-size: 1rem;
     color: orange;
   }
   #main-hero-section {
-    background-image: linear-gradient(rgba(96, 96, 96, 0.3), rgba(96, 96, 96, 0.3)), url('../images/tree-960.jpg');
+    background-image: linear-gradient(rgba(96, 96, 96, 0.9), rgba(96, 96, 96, 0.6)), url('../images/mountain-1-960.jpg');
   }
 }
 
@@ -209,11 +216,13 @@ h1 {
   }
   .sub-head {
     font-size: 1.25rem;
-    color: green;
   }
   .text-brand {
     font-size: 1rem;
     color: green;
+  }
+  .main-banner {
+    margin-top: 1rem;
   }
   #submit-button {
     margin-top: 0px;
@@ -221,7 +230,7 @@ h1 {
     width: 15vw;
   }
   #main-hero-section {
-    background-image: linear-gradient(rgba(96, 96, 96, 0.3), rgba(96, 96, 96, 0.3)), url('../images/tree-1024.jpg');
+    background-image: linear-gradient(rgba(96, 96, 96, 0.9), rgba(96, 96, 96, 0.6)), url('../images/mountain-1-1024.jpg');
   }
 }
 
@@ -233,11 +242,13 @@ h1 {
   }
   .sub-head {
     font-size: 1.25rem;
-    color: gray;
   }
   .text-brand {
     font-size: 1.25rem;
     color: gray;
+  }
+  .main-banner {
+    margin-top: 2rem;
   }
   #submit-button {
     margin-top: 0px;
@@ -245,8 +256,7 @@ h1 {
     width: 20vw;
   }
   #main-hero-section {
-    background-image: linear-gradient(rgba(96, 96, 96, 0.3), rgba(96, 96, 96, 0.3)), url('../images/tree-1280.jpg');
+    background-image: linear-gradient(rgba(96, 96, 96, 0.9), rgba(96, 96, 96, 0.6)), url('../images/mountain-1-1280.jpg');
     /*background-image: url('../images/technology-1-1200-800.jpg');*/
-    background-repeat: repeat-x;
   }
 }
