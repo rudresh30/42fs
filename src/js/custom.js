@@ -47,43 +47,61 @@ $(document).ready(function() {
       },
       'slow');
   });
+  $('#cfp-fe-btn').click(function(e) {
+    e.preventDefault();
+    $('#cfp-fe-content-id').slideToggle('fast');
+    $('#cfp-fe-chevdown').toggleClass('fa-chevron-down');
+    $('#cfp-fe-chevdown').toggleClass('fa-chevron-right');
+  })
+
+  $('#cfp-be-btn').click(function(e) {
+    e.preventDefault();
+    $('#cfp-be-content-id').slideToggle('fast');
+    $('#cfp-be-chevdown').toggleClass('fa-chevron-down');
+    $('#cfp-be-chevdown').toggleClass('fa-chevron-right');
+  })
+
+  $('#cfp-sf-btn').click(function(e) {
+    e.preventDefault();
+    $('#cfp-sf-content-id').slideToggle('fast');
+    $('#cfp-sf-chevdown').toggleClass('fa-chevron-down');
+    $('#cfp-sf-chevdown').toggleClass('fa-chevron-right');
+  })
+})
 
 
-  //hero image html element
-  let imageHtml = `<img class="img-hero img-rounded img-responsive fs-hero-img" id="hero-image" src="./images/coding.svg" />`;
-  let imageDiv = `<div class="col-sm-12 col-lg-6 order-lg-1 columnA" id="hero-image-div"></div>`;
-  //media queries using modernizr
-  //on very small screens
-  $(window).resize(function() {
-    if (Modernizr.mq('(min-width: 320px)')) {
-      $('#navbrand').html('42 Full Stack -xs');
-      $('#launch-tag').html('Launch Price: <s>Rs 34650</s> <b>Rs 27450</b> ')
-    }
-  })
-  //on small screens
-  $(window).resize(function() {
-    if (Modernizr.mq('(min-width: 544px)')) {
-      $('#navbrand').html('42 Full Stack -mo');
-    }
-  })
-  //on tablet size screens
-  $(window).resize(function() {
-    if (Modernizr.mq('(min-width: 768px)')) {
-      $('#navbrand').html('42 Full Stack -tab');
-    }
-  })
-  //on laptops small desktops
+//media queries using modernizr
+//on very small screens
+$(window).resize(function() {
+  if (Modernizr.mq('(min-width: 320px)')) {
+    $('#navbrand').html('42 Full Stack -xs');
+    $('#launch-tag').html('Launch Price: <s>Rs 34650</s> <b>Rs 27450</b> ')
+  }
+})
+//on small screens
+$(window).resize(function() {
+  if (Modernizr.mq('(min-width: 544px)')) {
+    $('#navbrand').html('42 Full Stack -mo');
+  }
+})
+//on tablet size screens
+$(window).resize(function() {
+  if (Modernizr.mq('(min-width: 768px)')) {
+    $('#navbrand').html('42 Full Stack -tab');
+  }
+})
+//on laptops small desktops
 
-  $(window).resize(function() {
-    if (Modernizr.mq('(min-width: 992px)')) {
-      $('#navbrand').html('42 Full Stack - lap');
-    }
-  })
-  //on large desktops
+$(window).resize(function() {
+  if (Modernizr.mq('(min-width: 992px)')) {
+    $('#navbrand').html('42 Full Stack - lap');
+  }
+})
+//on large desktops
 
-  $(window).resize(function() {
-    if (Modernizr.mq('(min-width: 1200px)')) {
-      $('#navbrand').html('42 Full Stack -desk');
-    }
-  }).resize(); // causes an initial resize to occur
+$(window).resize(function() {
+if (Modernizr.mq('(min-width: 1200px)')) {
+  $('#navbrand').html('42 Full Stack -desk');
+}
+}).resize(); // causes an initial resize to occur
 });
