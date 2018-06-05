@@ -240,6 +240,19 @@ h1 {
   margin-top: 10px;
 }
 
+footer {
+  background-color: #EAEAEA;
+}
+
+#cfp-contact-foo p {
+  margin: 0;
+}
+
+#cfp-contact-foo a {
+  color: #000;
+  text-decoration-style: solid;
+}
+
 /*on mobile devices*/
 
 @media (min-width: 544px) {
