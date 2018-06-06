@@ -236,6 +236,15 @@ h1 {
   margin-top: 5px;
 }
 
+#cfp-sf-content-id ul {
+  list-style: disc outside none;
+  padding: 1rem;
+}
+
+#cfp-sf-content-id li {
+  padding: 0.2rem;
+}
+
 #batch-select {
   font-size: 0.75rem;
   margin-top: 10px;
