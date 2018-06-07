@@ -283,6 +283,8 @@ h1 {
   -webkit-appearance: none;
   appearance: none;
   background: url('./images/downward-arrow.png') right;
+  text-indent: 0.01px;
+  tex-overflow: "";
 }
 
 #cfp-contact-details input {
