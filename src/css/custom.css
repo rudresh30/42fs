@@ -320,6 +320,22 @@ footer {
   color: #b1b1b1;
 }
 
+#cfp-contact-foo, #cfp-hours-foo, #cfp-social-foo {
+  padding: 0.5rem;
+}
+
+#cfp-contact-foo h6 {
+  color: #111;
+}
+
+#cfp-hours-foo h6 {
+  color: #111;
+}
+
+#cfp-social-foo h6 {
+  color: #111;
+}
+
 /*on mobile devices*/
 
 @media (min-width: 544px) {
