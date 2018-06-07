@@ -267,7 +267,7 @@ h1 {
 #batch-select {
   font-size: 1rem;
   background: transparent;
-  border: lightgray 0.55px solid;
+  border: lightgray 0.8px solid;
   width: 80vw;
   height: 2.5rem;
   margin-bottom: 10px;
@@ -275,6 +275,14 @@ h1 {
 
 #batch-select option {
   color: #444;
+}
+
+#batch-select select {
+  padding: 0.2rem;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: url('./images/downward-arrow.png') right;
 }
 
 #cfp-contact-details input {
