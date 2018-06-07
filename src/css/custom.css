@@ -169,7 +169,7 @@ h1 {
   width: 84vw;
   color: #34D2D4;
   margin-top: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   font-size: 1.2rem;
   background: none;
 }
@@ -195,7 +195,7 @@ h1 {
   width: 84vw;
   color: #34D2D4;
   margin-top: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   font-size: 1.2rem;
   background: none;
 }
@@ -218,7 +218,7 @@ h1 {
   min-width: 84vw;
   color: #34D2D4;
   margin-top: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   font-size: 1.2rem;
   background: none;
 }
@@ -238,10 +238,36 @@ h1 {
 
 #cfp-sf-content-id ul {
   list-style: disc outside none;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 #cfp-sf-content-id li {
+  padding: 0.2rem;
+}
+
+#cfp-be-content-id {
+  margin-top: 5px;
+}
+
+#cfp-be-content-id ul {
+  list-style: disc outside none;
+  padding: 0.5rem;
+}
+
+#cfp-be-content-id li {
+  padding: 0.2rem;
+}
+
+#cfp-fe-content-id {
+  margin-top: 5px;
+}
+
+#cfp-fe-content-id ul {
+  list-style: disc outside none;
+  padding: 0.5rem;
+}
+
+#cfp-fe-content-id li {
   padding: 0.2rem;
 }
 

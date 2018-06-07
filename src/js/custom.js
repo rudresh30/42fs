@@ -54,31 +54,52 @@ $(document).ready(function() {
     $('#cfp-fe-chevdown').toggleClass('fa-chevron-right');
     $('#cfp-fe-chevdown').toggleClass('fa-chevron-down');
     $("html,body").animate({
-        scrollTop: $("#cfp-fe-btn").offset().top
+        scrollTop: $(".course-content").offset().top
       },
       'slow');
   });
   //backend content display
+  let be_stat = 'close';
   $('#cfp-be-btn').click(function(e) {
     e.preventDefault();
     $('#cfp-be-content-id').slideToggle('fast');
     $('#cfp-be-chevdown').toggleClass('fa-chevron-right');
     $('#cfp-be-chevdown').toggleClass('fa-chevron-down');
-    $("html,body").animate({
-        scrollTop: $("#cfp-be-btn").offset().top
-      },
-      'slow');
+    if (be_stat === 'close') {
+      $("html,body").animate({
+          scrollTop: $("#cfp-be-btn").offset().top
+        },
+        'slow');
+      be_stat = 'open';
+    } else {
+      $("html,body").animate({
+          scrollTop: $("#cfp-fe-btn").offset().top
+        },
+        'slow');
+      be_stat = 'close';
+    }
+
   });
   //softskills content display
+  let sf_stat = 'close';
   $('#cfp-sf-btn').click(function(e) {
     e.preventDefault();
     $('#cfp-sf-content-id').slideToggle('fast');
     $('#cfp-sf-chevdown').toggleClass('fa-chevron-right');
     $('#cfp-sf-chevdown').toggleClass('fa-chevron-down');
-    $("html,body").animate({
-        scrollTop: $("#cfp-sf-btn").offset().top
-      },
-      'slow');
+    if (sf_stat === 'close') {
+      $("html,body").animate({
+          scrollTop: $("#cfp-sf-btn").offset().top
+        },
+        'slow');
+      sf_stat = 'open';
+    } else {
+      $("html,body").animate({
+          scrollTop: $("#cfp-be-btn").offset().top
+        },
+        'slow');
+      sf_stat = 'close';
+    }
   });
 
   //media queries using modernizr
