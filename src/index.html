@@ -270,31 +270,37 @@
   </div>
   <!--Course Content Ends-->
   <hr>
-  <!--Form Group-->
 
-  <div class="form-group container">
-    <label for="input-email">Enter your email</label>
-    <div class="row" id="email-div">
-      <div class="col-sm-12">
-        <input type="email" class="form-control" id="input-email">
-      </div>
-    </div>
-    <!--<label for="batch-select">which batch would you like to join?</label>-->
-    <div class="row">
-      <div class="col-sm-12">
-        <label for="batch-select">View available batches</label>
-        <select id="batch-select" class="selectpicker select-batch" title="Select a batch to enroll" data-width="auto">
-          <optgroup label="morning mon-wed-fri">
-            <option value="0">14 May-27 July | 07:45-09:45</option>
-            </optgroup>
-          <optgroup label="afternoon tue-thu-sat">
-            <option value="1">22 May-4 August | 13:15-15:15</option>
-            </optgroup>
-          <optgroup label="evening tue-thu-sat">
-            <option value="2">22 May-4 August | 18:15-20:15</option>
-            </optgroup>
-        </select>
-      </div>
+  <!--Form Group-->
+  <div class="form-group container" id="cfp-contact-details">
+    <div class=" row">
+      <h3 class="col-sm-12 text-center">
+        Contact Details
+      </h3>
+      <form role="form" method="post" action="/contact">
+        <div class="col-sm-12 text-left">
+          <label for="input-email">Email</label>
+          <input type="email" class="form-control" id="input-email" name="email">
+        </div>
+        <div class="col-sm-12 text-left">
+          <label for="input-phone">Contact Number</label>
+          <input type="text" class="form-control" id="input-phone" name="phone">
+        </div>
+        <div class="col-sm-12">
+          <label for="batch-select">View Available Batches</label><br>
+          <select id="batch-select" class="batch-selector" title="Select a batch to enroll" name="batch">
+              <optgroup label="morning mon-wed-fri">
+                <option value="0">14 May to 27 July | 07:45-09:45</option>
+              </optgroup>
+              <optgroup label="afternoon tue-thu-sat">
+                <option value="1">22 May to 4 August | 13:15-15:15</option>
+              </optgroup>
+              <optgroup label="evening tue-thu-sat">
+                <option value="2">22 May to 4 August | 18:15-20:15</option>
+              </optgroup>
+            </select>
+        </div>
+      </form>
     </div>
   </div>
   <!--Form Group Ends-->

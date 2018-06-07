@@ -38,8 +38,6 @@ $(document).ready(function() {
     gtcpara.slideToggle("fast");
     gtcreadmore.slideToggle("fast");
   });
-  $('#input-email').height($('#submit-button').height());
-  $('#batch-select').height($('#submit-button').height());
 
   $("#submit-button").click(function() {
     $("html,body").animate({

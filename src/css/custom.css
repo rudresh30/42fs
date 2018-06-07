@@ -88,13 +88,6 @@ a.mttreadlessbtn:hover {
   border-bottom: 1px blue solid;
 }
 
-#bootstrap-overrides .select-batch {
-  border: lightgray 0.55px solid;
-  /**-webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;*/
-}
-
 .main-banner {
   color: #3aebee;
   text-align: center;
@@ -272,8 +265,26 @@ h1 {
 }
 
 #batch-select {
-  font-size: 0.75rem;
-  margin-top: 10px;
+  font-size: 1rem;
+  background: transparent;
+  border: lightgray 0.55px solid;
+  width: 80vw;
+  height: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#batch-select option {
+  color: #444;
+}
+
+#cfp-contact-details input {
+  width: 80vw;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#cfp-contact-details label {
+  padding-top: 1rem;
 }
 
 footer {
