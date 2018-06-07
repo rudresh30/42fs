@@ -65,7 +65,7 @@ $(document).ready(function() {
     $('#cfp-be-chevdown').toggleClass('fa-chevron-right');
     $('#cfp-be-chevdown').toggleClass('fa-chevron-down');
     $("html,body").animate({
-        scrollTop: $("#cfp-be-btn").offset().top - 90
+        scrollTop: $("#cfp-be-btn").offset().top
       },
       'slow');
   });
@@ -76,7 +76,7 @@ $(document).ready(function() {
     $('#cfp-sf-chevdown').toggleClass('fa-chevron-right');
     $('#cfp-sf-chevdown').toggleClass('fa-chevron-down');
     $("html,body").animate({
-        scrollTop: $("#cfp-sf-btn").offset().top - 100
+        scrollTop: $("#cfp-sf-btn").offset().top
       },
       'slow');
   });
