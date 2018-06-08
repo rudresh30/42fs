@@ -1,5 +1,7 @@
 let path = require('path');
 let express = require('express');
+let bodyParser = require('body-parser');
+let pg = require('pg');
 
 let app = express();
 
