@@ -1,12 +1,12 @@
-var path = require('path');
-var express = require('express');
+let path = require('path');
+let express = require('express');
 
-var app = express();
+let app = express();
 
-var staticpath = path.join(__dirname, '/src');
+let staticpath = path.join(__dirname, '/src');
 app.use(express.static(staticpath));
 
-var port = process.env.PORT || 3000;
+let port = process.env.PORT || 3000;
 app.listen(port, function() {
   console.log('listening on port 3000');
 })
