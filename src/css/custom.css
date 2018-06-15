@@ -8,7 +8,9 @@
 
 #bootstrap-overrides {
   font-family: 'Lato', sans-serif;
+  background-color: #f8f9fa;
 }
+
 
 #bootstrap-overrides .navbar-custom {
   background-color: #3AEBEE;
@@ -20,6 +22,7 @@
   background-size: cover;
   height: auto;
   min-height: 85vh;
+  border-bottom: 5px #444 solid;
 }
 
 .slider-para {
@@ -291,6 +294,7 @@ h1 {
   width: 80vw;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  background: transparent;
 }
 
 #cfp-contact-details label {
