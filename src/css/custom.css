@@ -161,9 +161,22 @@ h1 {
   margin-top: 10px;
 }
 
+.course-content{
+  background-image: linear-gradient(rgba(96, 96, 96, 0.8), rgba(96, 96, 96, 0.6)), url('../images/books-3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+#cfp-course-content{
+  margin-top: 10px;
+  color: #3AEBEE;
+  text-shadow: 1px 1px 1px #111;
+}
+
+
 #cfp-fe-btn {
   width: 84vw;
-  color: #34D2D4;
+  color: #FFFFFF;
   margin-top: 10px;
   margin-bottom: 8px;
   font-size: 1.2rem;
@@ -171,8 +184,8 @@ h1 {
 }
 
 #cfp-fe-btn:hover {
-  color: #3AEBEE;
-  background: #E6E6E6;
+  color: #e0e0e0;
+  background: #303030;
 }
 
 #cfp-fe-btn:focus {
@@ -185,11 +198,14 @@ h1 {
 
 #cfp-fe-content-id {
   margin-top: 5px;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #111;
+  font-size: 1.1rem;
 }
 
 #cfp-be-btn {
   width: 84vw;
-  color: #34D2D4;
+  color: #ffffff;
   margin-top: 10px;
   margin-bottom: 8px;
   font-size: 1.2rem;
@@ -197,8 +213,8 @@ h1 {
 }
 
 #cfp-be-btn:hover {
-  color: #3AEBEE;
-  background: #E6E6E6;
+  color: #e0e0e0;
+  background: #303030;
 }
 
 #cfp-be-chevdown {
@@ -207,12 +223,14 @@ h1 {
 
 #cfp-be-content-id {
   margin-top: 5px;
+  text-shadow: 1px 1px 1px #111;
+  font-size: 1.1rem;
 }
 
 #cfp-sf-btn {
   width: auto;
   min-width: 84vw;
-  color: #34D2D4;
+  color: #ffffff;
   margin-top: 10px;
   margin-bottom: 8px;
   font-size: 1.2rem;
@@ -220,8 +238,8 @@ h1 {
 }
 
 #cfp-sf-btn:hover {
-  color: #3AEBEE;
-  background: #E6E6E6;
+  color: #e0e0e0;
+  background: #303030;
 }
 
 #cfp-sf-chevdown {
@@ -230,6 +248,8 @@ h1 {
 
 #cfp-sf-content-id {
   margin-top: 5px;
+  text-shadow: 1px 1px 1px #111;
+  font-size: 1.1rem;
 }
 
 #cfp-sf-content-id ul {
@@ -287,7 +307,11 @@ h1 {
   appearance: none;
   background: url('./images/downward-arrow.png') right;
   text-indent: 0.01px;
-  tex-overflow: "";
+  text-overflow: "";
+}
+
+#cfp-contact-details h3{
+  margin-top: 10px;
 }
 
 #cfp-contact-details input {
@@ -308,7 +332,7 @@ footer {
 }
 
 #cfp-contact-foo p {
-  margin-bottom: : 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 #cfp-contact-foo a {
