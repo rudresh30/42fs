@@ -54,12 +54,13 @@ app.post("/submit", urlencodedParser, function (req, res) {
     values: [req.body.name, req.body.email, req.body.contactno, req.body.batch]
     //rowMode:'array'
   }
-  client.query(queryobj, (err, res) => {
+  client.query(queryobj, (err, response) => {
     if (err) {
       console.log(err.stack);
 
     } else {
       console.log("insert successful");
+      res.redirect('/');
     }
     client.end();
   })

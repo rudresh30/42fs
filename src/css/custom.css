@@ -308,6 +308,11 @@ h1 {
   background: url('./images/downward-arrow.png') right;
   text-indent: 0.01px;
   text-overflow: "";
+  
+}
+
+#cfp-contact-details{
+  color: #333;
 }
 
 #cfp-contact-details h3{
@@ -319,10 +324,47 @@ h1 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   background: transparent;
+  border-bottom-color: #3AEBEE;
+  border-left: none;
+  border-right: none;
+  border-top: none;
 }
 
 #cfp-contact-details label {
   padding-top: 1rem;
+}
+
+#batch-select{
+  border-color: #3AEBEE;
+}
+
+.cfp-submit-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+
+.cfp-btn-submit{
+  background-color: #3AEBEE;
+  color: #ffffff;
+  text-shadow: 0.5px 0.5px 0.5px #111;
+  font-size: 2rem;
+  min-width: 30vw;
+  border-radius: 24px;
+  box-shadow: 0 3px 1px 0 #111111;
+}
+
+.cfp-btn-submit:hover {
+  background-color: #34D2D4;
+}
+
+.cfp-btn-submit:active {
+  background-color: lighten(#34D2D4, 50%);
+  box-shadow: none;
+  margin-bottom: -3px;
+  margin-top: 3px;
 }
 
 footer {
