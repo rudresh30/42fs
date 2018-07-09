@@ -339,6 +339,13 @@ h1 {
   border-color: #3AEBEE;
 }
 
+#batch-select select{
+  font-style: normal;
+  font-weight: lighter;
+  -webkit-appearance: menulist;  
+  -moz-appearance: menulist;
+}
+
 .cfp-submit-btn{
   display: flex;
   justify-content: center;
