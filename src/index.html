@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="42 fullstack static">
+  <meta name="description" content="42 Fullstack static">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
@@ -61,11 +61,11 @@
   <!--hero section -->
   <section class="hero-section" id="main-hero-section">
     <div class="container-fluid">
-      <h1 class="text-center main-head" id="hero-title">Become a fullstack software engineer</h1>
+      <h1 class="text-center main-head" id="hero-title">Become a Fullstack Software Engineer</h1>
       <div class="row">
         <div class="col-sm-12 col-lg-12 ">
-          <h2 class="sub-head text-left" id="hero-para">42fs is only academy in Ahmedabad providing classroom-based fullstack software engineering training using nodejs
-            and reactjs - the latest in web technologies and used by majority of sillicon valley start-ups - taught by ex
+          <h2 class="sub-head text-left" id="hero-para">42fs is only academy in Ahmedabad providing classroom-based Fullstack software engineering training using Nodejs
+            and Reactjs - the latest in web technologies and used by majority of silicon valley start-ups - taught by ex
             Oracle and Accenture software architect.</h2>
         </div>
         <div class="col-sm-12 col-lg-4 main-banner">
@@ -109,9 +109,9 @@
         </p>
         <p id="ltt-para" class="hide">
           It is a must have skill if you want to work for top technology companies like Google, Facebook, Amazon, Uber and Flipkart.
-          Learn the art of programming using the latest technologies - node, react, react-native and nginx. Our practical-first
-          approach will give you experience and confidence to develop and deploy your apps in production environment - just
-          like how experienced professionals would do.
+          Learn the art of programming using the latest technologies - Node, Express, React, React-native and Nginx. Our
+          practical-first approach will give you experience and confidence to develop and deploy your apps in production
+          environment - just like how experienced professionals would do.
           <a class="lttreadlessbtn"> Read less</a>
         </p>
         </p>
@@ -132,7 +132,7 @@
           control system, dev tools or tools that automate build process.
           <a class="mttreadmorebtn"> Read more</a>
         </p>
-        <p id="mtt-para" class="hide">We have carefully selected the tools used by top-notch sillicon-valley programmers. Advertise your knowldege of tools
+        <p id="mtt-para" class="hide">We have carefully selected the tools used by top-notch silicon-valley programmers. Advertise your knowledge of tools
           like atom editor, git version control, vagrant, gulp and mocha and you're sure to stand-out from the crowd. In
           addition,No software engineering resume is complete without knowledge of Linux. Our course has special emphasis
           on getting required Linux skills - both desktop and server os versions of Ubuntu. You will also learn how professionals
@@ -288,7 +288,7 @@
           <div class="col-sm-12 col-lg-6">
             <h5>Career in Tech</h5>
             <ul>
-              <li>How to create your CV? what to emphasise?</li>
+              <li>How to create your CV? what to emphasize?</li>
               <li>How to improve your chances of being picked by a large technology company?</li>
               <li>How to create a professional linkedin profile?</li>
               <li>Communication and networking skills for software engineers</li>
@@ -304,7 +304,47 @@
     </div>
   </div>
   <!--Course Content Ends-->
+  <!--Facilitator profile-->
+  <section class="facilitator-profile">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="cfp-profile-title text-center">
+            <h3>Our Instructor</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="cfp-image-wrapper text-center">
+            <div class="cfp-profile-image">
+              <img src="./images/facilitator.jpg" alt="founder image" class="img-thumbnail rounded-circle">
+            </div>
+          </div>
 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="cfp-profile-name text-center">
+            <h5>Rudresh Pandya</h5>
+            <p>Rudresh is Computer Engineer from Mumbai University and MBA from HEC Paris. He has around 15 years of experience
+              in Computer Software Industry. He has lived and worked across Asia, Africa and Europe and has executed complex,
+              large-scale software projects as Software Engineer, Team Lead and Solution Architect. Most recently he was
+              a Senior Manager at Accenture, Johannesburg where he led the engineering team to implement Digital Channels
+              for a large European bank across African continent. He is a tech enthusiast with a passion for learning and
+              teaching technology. In his free time he enjoys reading, playing chess and of course - coding!
+            </p>
+            <p>Join us to gain from his immense international experience to learn not just about technology but also about the
+              tech industry and how to grow your career</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!--Facilitator profile-->
   <!--Form Group-->
   <div class="form-group container" id="cfp-contact-details">
     <div class=" row">
@@ -314,11 +354,11 @@
       <form role="form" method="post" action="/submit">
         <div class="col-sm-12 text-left">
           <label for="input-name">Name</label>
-          <input type="text" class="form-control" id="input-name" name="name" autocomplete="off">
+          <input type="text" class="form-control" id="input-name" name="name" autocomplete="off" required>
         </div>
         <div class="col-sm-12 text-left">
           <label for="input-email">Email</label>
-          <input type="email" class="form-control" id="input-email" name="email" autocomplete="off">
+          <input type="email" class="form-control" id="input-email" name="email" autocomplete="off" required>
           <div class="invalid-feedback">
             Please provide a valid email
           </div>
@@ -331,7 +371,7 @@
           <label for="batch-select">View Available Batches</label>
           <br>
           <br>
-          <select id="batch-select" class="batch-selector" title="Select a batch to enroll" name="batch">
+          <select id="batch-select" class="batch-selector" title="Select a batch to enroll" name="batch" autocomplete="off" required>
             <optgroup label="morning mon-wed-fri">
               <option value="0">14 May to 27 July | 07:45-09:45</option>
             </optgroup>
@@ -346,8 +386,8 @@
             Please select a batch to proceed
           </div>
         </div>
-        <div class="col-sm-12 cfp-submit-btn">
-          <button class="btn btn-default cfp-btn-submit" type="submit">
+        <div class="col-sm-12 cfp-submit-btn text-center">
+          <button class="btn cfp-btn-submit" type="submit">
             Submit
           </button>
         </div>
