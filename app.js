@@ -12,8 +12,15 @@ const staticpath = path.join(__dirname, '/src');
 app.use(express.static(staticpath));
 
 
-app.get('/', function (req, res) {
-  res.render('./src/index.html');
+app.get('/', function (req, res, next) {
+  try {
+    res.render('./src/index.html');
+  }
+  catch (err) {
+    next(err);
+  }
+
+
 });
 
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
@@ -39,13 +46,11 @@ client.query(queryobj, (err, res) => {
   client.end();
 });*/
 //temp test for post
-app.post("/save", urlencodedParser, function (req, res) {
-  console.log(req.body);
-})
+
 
 
 //handle contact form post data
-app.post("/submit", urlencodedParser, function (req, res) {
+app.post("/submit", urlencodedParser, function (req, res, next) {
   let client = new pg.Client({ connectionString: connectString });
   client.connect();
 
@@ -54,12 +59,12 @@ app.post("/submit", urlencodedParser, function (req, res) {
     values: [req.body.name, req.body.email, req.body.contactno, req.body.batch]
     //rowMode:'array'
   }
-  client.query(queryobj, (err, response) => {
+  client.query(queryobj, (err, response, next) => {
     if (err) {
-      console.log(err.stack);
+      next(err);
 
     } else {
-      console.log("insert successful");
+
       res.redirect('/');
     }
     client.end();

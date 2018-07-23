@@ -2,13 +2,23 @@
   border: 1px solid red !important;
 }*/
 
-.fslogo {
-  height: 20px;
-}
+
 
 #bootstrap-overrides {
   font-family: 'Lato', sans-serif;
   background-color: #f8f9fa;
+}
+
+.fs-brand{
+  display: inline-block;
+  height: 100%;
+  width: 20vw;
+  font-size: 0.8rem;
+  
+}
+.fs-brand span{
+  color: #333;
+  margin-left: 5px;
 }
 
 
@@ -21,7 +31,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-  min-height: 85vh;
+  height: 85vh;
+  width: 100%;
   border-bottom: 5px #444 solid;
 }
 
@@ -304,11 +315,10 @@ h1 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   background: transparent;
-  border-bottom-color: #3AEBEE;
   border-left: none;
   border-right: none;
   border-top: none;
-  
+  border-bottom: 0.5px solid #3AEBEE;
 }
 
 #cfp-contact-details label {
@@ -327,9 +337,8 @@ select{
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom-color: #3AEBEE;
+  border-bottom: 0.5px solid #3AEBEE;
   font-style: normal;
-  font-weight: lighter;
   width:85vw;
   color: #333;
 }
@@ -438,6 +447,8 @@ footer {
 .cfp-profile-name h5{
   text-transform: capitalize;
   color: #3AEBEE;
+  display: flex;
+  justify-content: center;
 }
 
 /**profile section*/
@@ -514,6 +525,10 @@ footer {
 /*on small dekstops and laptops*/
 
 @media (min-width: 992px) {
+  .fs-brand{
+    width: 10vw;
+    font-size: 1rem;
+  }
   h1 {
     font-size: 4.8rem;
   }
@@ -555,6 +570,10 @@ footer {
 /* on large desktops*/
 
 @media (min-width: 1200px) {
+  .fs-brand{
+    width: 10vw;
+    font-size: 1rem;
+  }
   h1 {
     font-size: 4.8rem;
   }
