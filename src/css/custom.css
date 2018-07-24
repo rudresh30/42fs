@@ -453,6 +453,10 @@ footer {
 
 /**profile section*/
 
+.facilitator-profile{
+  margin-top: 10px;
+}
+
 .cfp-profile-image{
   width:20rem;
   height:14rem;
@@ -465,6 +469,11 @@ footer {
   color: #3AEBEE;
   display: flex;
   justify-content: center;
+}
+
+.cfp-profile-name p{
+  max-width: 80vw;
+  margin-left: 10vw;
 }
 
 /**profile section*/
