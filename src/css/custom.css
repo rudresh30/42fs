@@ -375,6 +375,22 @@ select{
   margin-top: 3px;
 }
 
+/** form input */
+
+/** teaching method */
+
+.teaching-method{
+  margin-top: 10px;
+}
+.method-container{
+  margin-top: 10px;
+}
+.method-container img{
+  padding:50px;
+  max-height: 40vh;
+}
+/** teaching method */
+
 footer {
   background-color: #EAEAEA;
   color: #333;
