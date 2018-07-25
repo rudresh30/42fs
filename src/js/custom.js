@@ -100,6 +100,34 @@ $(document).ready(function () {
     }
   });
 
+  //submit form data to server
+  $('#cfp-submit-form').on('click', function (e) {
+    e.preventDefault();
+    postData()
+      .done(function (data) {
+        alert(data.result);
+      })
+  });
+
+  //create data object for post
+
+  var formData = {
+    name: $('#input-name'),
+    email: $('#input-email'),
+    contactno: $('#input-phone'),
+    batch: $('select option:selected').val()
+  }
+
+  function postData() {
+    return $.ajax({
+      url: '/submit',
+      data: formData,
+      dataType: 'json',
+      type: 'POST'
+    })
+  }
+  //submit form data
+
   //media queries using modernizr
   //on very small screens
   $(window).resize(function () {
