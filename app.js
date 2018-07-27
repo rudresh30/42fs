@@ -23,7 +23,8 @@ app.get('/', function (req, res, next) {
 
 });
 
-const urlencodedParser = bodyParser.urlencoded({ extended: false });
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 const connectString = 'postgres://bqupwvgf:6aKL3RRcDitWPgtojtLHGzpHmoLoDKhU@elmer.db.elephantsql.com:5432/bqupwvgf';
 /*
 let client = new pg.Client({ connectionString: connectString });
@@ -50,22 +51,24 @@ client.query(queryobj, (err, res) => {
 
 
 //handle contact form post data
-app.post("/submit", urlencodedParser, function (req, res, next) {
+app.post("/submit", function (req, res, next) {
   let client = new pg.Client({ connectionString: connectString });
   client.connect();
-
+  console.log(req.body);
   let queryobj = {
     text: `insert into inquiries values(nextval('inq_sequence'),$1,$2,$3,localtime,$4,current_date)`,
     values: [req.body.name, req.body.email, req.body.contactno, req.body.batch]
     //rowMode:'array'
   }
-  client.query(queryobj, (err, response, next) => {
+  client.query(queryobj, (err, response) => {
     if (err) {
+      res.json({ result: `Oops! Something went wrong. Please try again.` });
+      console.log(err);
       next(err);
 
     } else {
 
-      res.redirect('/');
+      res.json({ result: `Got your request, ${req.body.name}! We will reach out to you as soon as possible` })
     }
     client.end();
   })

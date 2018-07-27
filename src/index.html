@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="42 Fullstack static">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="./css/custom.css">
 </head>
 
@@ -436,44 +438,38 @@
       <h3 class="col-sm-12 text-center">
         Contact Form
       </h3>
-      <form role="form" method="post" action="/submit">
-        <div class="col-sm-12 text-left">
+      <form id="contactForm" role="form" method="post" action="/">
+        <div class="form-element col-sm-12 text-left">
           <label for="input-name">Name</label>
-          <input type="text" class="form-control" id="input-name" name="name" autocomplete="off" placeholder="Enter Name" required>
+          <input type="text" class="form-control" id="input-name" name="name" autocomplete="off" placeholder="Enter Name">
         </div>
-        <div class="col-sm-12 text-left">
+        <div class=" form-element col-sm-12 text-left">
           <label for="input-email">Email</label>
-          <input type="email" class="form-control" id="input-email" name="email" autocomplete="off" placeholder="Enter Email" required>
-          <div class="invalid-feedback">
-            Please provide a valid email
-          </div>
+          <input type="email" class="form-control" id="input-email" name="email" autocomplete="off" placeholder="Enter Email">
         </div>
-        <div class="col-sm-12 text-left">
+        <div class="form-element col-sm-12 text-left">
           <label for="input-phone">Contact Number</label>
           <input type="text" class="form-control" id="input-phone" name="contactno" autocomplete="off" placeholder="Enter Contact Number">
         </div>
-        <div class="col-sm-12">
+        <div class="form-element col-sm-12">
           <label for="batch-select">View Available Batches</label>
           <br>
           <br>
-          <select id="batch-select" class="batch-selector" title="Select a batch to enroll" name="batch" autocomplete="off" required>
+          <select id="batch-select" class="batch-selector" title="Select a batch to enroll" name="batch" autocomplete="off">
             <optgroup label="morning mon-wed-fri">
-              <option value="0">14 May to 27 July | 07:45-09:45</option>
+              <option value="1">14 May to 27 July | 07:45-09:45</option>
             </optgroup>
             <optgroup label="afternoon tue-thu-sat">
-              <option value="1">22 May to 4 August | 13:15-15:15</option>
+              <option value="2">22 May to 4 August | 13:15-15:15</option>
             </optgroup>
             <optgroup label="evening tue-thu-sat">
-              <option value="2">22 May to 4 August | 18:15-20:15</option>
+              <option value="3">22 May to 4 August | 18:15-20:15</option>
             </optgroup>
           </select>
-          <div class="invalid-feedback">
-            Please select a batch to proceed
-          </div>
           <small>Maximum 12 students per batch</small>
         </div>
         <div class="col-sm-12 cfp-submit-btn text-center">
-          <button class="btn cfp-btn-submit" id="cfp-submit-form" type="submit">
+          <button class="btn cfp-btn-submit" id="cfp-submit-form" type="submit" value="submit">
             Submit
           </button>
         </div>
@@ -482,14 +478,15 @@
   </div>
   <div class='alert-modal'>
     <!-- Modal -->
-    <div id="myModal" class="modal fade" role="dialog">
+    <div id="alertModal" class="modal fade" role="dialog">
       <div class="modal-dialog">
 
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
             <h4 class="modal-title">Thank You</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+
           </div>
           <div class="modal-body">
             <p id='alert-msg'></p>
@@ -567,8 +564,12 @@
   <!--load bootstrap compiled js, jquery and popper js. may change cdn later -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/jquery-form/form@4.2.2/dist/jquery.form.min.js" integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i"
+    crossorigin="anonymous"></script>
   <script src="./lib/bootstrap-select-1.13.0/js/bootstrap-select.min.js"></script>
   <script src="./lib/modernizr-custom.js"></script>
   <script src="./js/custom.js"></script>

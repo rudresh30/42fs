@@ -374,6 +374,13 @@ select{
   margin-bottom: -3px;
   margin-top: 3px;
 }
+.form-error{
+  border-bottom: red !important;
+}
+.error-msg{
+  color:red;
+}
+
 
 /** form input */
 

@@ -100,32 +100,159 @@ $(document).ready(function () {
     }
   });
 
-  //submit form data to server
-  $('#cfp-submit-form').on('click', function (e) {
-    e.preventDefault();
-    postData()
-      .done(function (data) {
-        alert(data.result);
-      })
+  //validate form
+
+  //set defaults
+  $.validator.setDefaults({
+    errorClass: 'error-msg',
+    highlight: function (element) {
+      $(element)
+        .closest('.form-element')
+        .addClass('form-error');
+    },
+    unhighlight: function (element) {
+      $(element)
+        .closest('.form-element')
+        .removeClass('form-error');
+    }
   });
 
+  //hide modal by default
+
+  $('#alertModal').modal({
+    show: false
+  });
+
+
+  //validate contact-us form
+
+  $('#contactForm').validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 2,
+        maxlength: 30,
+        lettersonly: true
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      contactno: {
+        required: false,
+        minlength: 8,
+        maxlength: 18,
+        digits: true
+      },
+      batch: {
+        required: true
+      }
+    },
+    messages: {
+      name: {
+        required: "Please enter your name",
+        minlength: "Name must have at least 2 characters",
+        maxlength: "Name cannot be longer than 30 characters",
+        lettersonly: "Please enter valid letters only"
+      },
+      email: {
+        required: "Please provide email address",
+        email: "Please provide a valid email address"
+      },
+      contactno: {
+        minlength: "Phone number should have at least 8 digits - please provide STD code including '0' for landline",
+        maxlength: "Phone number should have maximum 18 digits - please provide STD code including '0' for landline",
+        digits: "phone number should only contain digits"
+      },
+      batch: {
+        required: "Please select a batch"
+      }
+    },
+
+    submitHandler: function (form) {
+      var batchId = $('select option:selected').val();
+      var name = $('#input-name').val();
+      var email = $('#input-email').val();
+      var contactno = $('#input-phone').val();
+
+      var formData = {
+        name: name,
+        email: email,
+        contactno: contactno,
+        batch: Number(batchId)
+      }
+
+      function postData() {
+        return $.ajax({
+          url: '/submit',
+          data: formData,
+          dataType: 'json',
+          type: 'POST'
+        });
+      };
+
+      postData().done(function (data) {
+        $('#alert-msg').text(data.result);
+        $('#alertModal').modal('show');
+        $('#input-name').val('');
+        $('#input-email').val('');
+        $('#input-phone').val('');
+      });
+
+    }
+
+  });
+
+
+
+
+
+
+  //submit form data to server
+  /*
+    $('#cfp-submit-form').on('click', function (e) {
+      e.preventDefault();
+  
+  
+      var batchId = $('select option:selected').val();
+      var name = $('#input-name').val();
+      var email = $('#input-email').val();
+      var contactno = $('#input-phone').val();
+  
+      console.log(batchId);
+  
+      var formData = {
+        name: name,
+        email: email,
+        contactno: contactno,
+        batch: Number(batchId)
+      }
+  
+      function postData() {
+        return $.ajax({
+          url: '/submit',
+          data: formData,
+          dataType: 'json',
+          type: 'POST'
+        });
+      };
+  
+      console.log(formData);
+  
+      postData().done(function (data) {
+        $('#alert-msg').text(data.result);
+        $('#alertModal').modal('show');
+        $('select option:selected').val('');
+        $('#input-name').val('');
+        $('#input-email').val('');
+        $('#input-phone').val('');
+      });
+    });
+  
+    */
   //create data object for post
 
-  var formData = {
-    name: $('#input-name'),
-    email: $('#input-email'),
-    contactno: $('#input-phone'),
-    batch: $('select option:selected').val()
-  }
 
-  function postData() {
-    return $.ajax({
-      url: '/submit',
-      data: formData,
-      dataType: 'json',
-      type: 'POST'
-    })
-  }
   //submit form data
 
   //media queries using modernizr
