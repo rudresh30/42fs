@@ -203,11 +203,6 @@ $(document).ready(function () {
 
   });
 
-
-
-
-
-
   //submit form data to server
   /*
     $('#cfp-submit-form').on('click', function (e) {
