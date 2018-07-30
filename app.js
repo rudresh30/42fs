@@ -3,6 +3,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const pg = require('pg');
 const helmet = require('helmet');
+const xssFilters = require('xss-filters');
+const validator = require('validator');
 
 const app = express();
 
@@ -55,9 +57,13 @@ app.post("/submit", function (req, res, next) {
   let client = new pg.Client({ connectionString: connectString });
   client.connect();
   console.log(req.body);
+  var qName = red.body.name;
+  var qEmail = red.body.email;
+  var qContactno = red.body.contactno;
+  var qBatch = red.body.batch;
   let queryobj = {
     text: `insert into inquiries values(nextval('inq_sequence'),$1,$2,$3,localtime,$4,current_date)`,
-    values: [req.body.name, req.body.email, req.body.contactno, req.body.batch]
+    values: [qName, qEmail, qContactno, qBatch]
     //rowMode:'array'
   }
   client.query(queryobj, (err, response) => {
@@ -68,7 +74,7 @@ app.post("/submit", function (req, res, next) {
 
     } else {
 
-      res.json({ result: `Got your request, ${req.body.name}! We will reach out to you as soon as possible` })
+      res.json({ result: `Got your request, ${xssFilters.inHTMLData(qName)}! We will reach out to you as soon as possible` })
     }
     client.end();
   })
