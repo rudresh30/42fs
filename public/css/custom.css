@@ -1,0 +1,646 @@
+/**{
+  border: 1px solid red !important;
+}*/
+
+
+
+#bootstrap-overrides {
+  font-family: 'Lato', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.fs-brand{
+  display: inline-block;
+  height: 100%;
+  width: 20vw;
+  font-size: 0.8rem;
+  
+}
+.fs-brand span{
+  color: #333;
+  margin-left: 5px;
+}
+
+
+#bootstrap-overrides .navbar-custom {
+  background-color: #3AEBEE;
+}
+
+#main-hero-section {
+  background-image: linear-gradient(rgba(96, 96, 96, 0.9), rgba(96, 96, 96, 0.6)), url('../images/mountain-1-320.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  height: 85vh;
+  width: 100%;
+  border-bottom: 5px #444 solid;
+}
+
+.slider-para {
+  margin-top: 15px;
+}
+
+.hide {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+#bootstrap-overrides a.lttreadmorebtn {
+  color: #3AEBEE;
+  cursor: pointer;
+}
+
+a.lttreadmorebtn:hover {
+  border-bottom: 1px blue solid;
+}
+
+a.lttreadlessbtn {
+  color: #3AEBEE !important;
+  cursor: pointer;
+}
+
+a.lttreadlessbtn:hover {
+  border-bottom: 1px blue solid;
+}
+
+a.gtcreadmorebtn {
+  color: #3AEBEE !important;
+  cursor: pointer;
+}
+
+a.gtcreadmorebtn:hover {
+  border-bottom: 1px blue solid;
+}
+
+a.gtcreadlessbtn {
+  color: #3AEBEE !important;
+  cursor: pointer;
+}
+
+a.gtcreadlessbtn:hover {
+  border-bottom: 1px blue solid;
+}
+
+a.mttreadmorebtn {
+  color: #3AEBEE !important;
+  cursor: pointer;
+}
+
+a.mttreadmorebtn:hover {
+  border-bottom: 1px blue solid;
+}
+
+a.mttreadlessbtn {
+  color: #3AEBEE !important;
+  cursor: pointer;
+}
+
+a.mttreadlessbtn:hover {
+  border-bottom: 1px blue solid;
+}
+
+.main-banner {
+  color: #3aebee;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 0.5rem;
+  display: inline-block;
+}
+
+#submit-button {
+  color: #FFFFFF;
+  margin-top: 1rem;
+  background-color: #34D2D4;
+  border: #34D2D4;
+  box-shadow: 0 3px 0 0 #111111;
+  border-radius: 24px;
+  width: auto;
+  min-width: 30vw;
+  text-shadow: 1px 1px 1px #000;
+}
+
+#submit-button:hover {
+  background-color: #3AEBEE;
+}
+
+#submit-button:active {
+  background-color: lighten(#34D2D4, 50%);
+  box-shadow: none;
+  margin-bottom: -1.2rem;
+  margin-top: 1.2rem;
+}
+
+.slider {
+  margin-top: 1rem;
+  color: #222;
+}
+
+.img-slider {
+  width: inherit;
+  height: 40vh;
+  display: block;
+  margin-right: 15px;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 2.4rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.sub-head {
+  font-size: 1.0625rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.main-head {
+  margin-top: 10px;
+}
+
+.text-brand {
+  font-size: 1rem;
+}
+
+.slider {
+  margin-top: 10px;
+}
+
+.course-content{
+  background-image: linear-gradient(rgba(96, 96, 96, 0.8), rgba(96, 96, 96, 0.6)), url('../images/books-3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+#cfp-course-content{
+  margin-top: 10px;
+  color: #3AEBEE;
+  text-shadow: 1px 1px 1px #111;
+}
+
+
+#cfp-fe-btn {
+  width: 84vw;
+  color: #FFFFFF;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  background: none;
+}
+
+#cfp-fe-btn:hover {
+  color: #e0e0e0;
+  background: #303030;
+}
+
+#cfp-fe-btn:focus {
+  outline-color: #3AEBEE;
+}
+
+#cfp-fe-chevdown {
+  padding-left: 10px;
+}
+
+#cfp-fe-content-id {
+  margin-top: 5px;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #111;
+  font-size: 1.1rem;
+}
+
+#cfp-be-btn {
+  width: 84vw;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  background: none;
+}
+
+#cfp-be-btn:hover {
+  color: #e0e0e0;
+  background: #303030;
+}
+
+#cfp-be-chevdown {
+  padding-left: 10px;
+}
+
+#cfp-be-content-id {
+  margin-top: 5px;
+  text-shadow: 1px 1px 1px #111;
+  font-size: 1.1rem;
+}
+
+#cfp-sf-btn {
+  width: auto;
+  min-width: 84vw;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  background: none;
+}
+
+#cfp-sf-btn:hover {
+  color: #e0e0e0;
+  background: #303030;
+}
+
+#cfp-sf-chevdown {
+  padding-left: 10px;
+}
+
+#cfp-sf-content-id {
+  margin-top: 5px;
+  text-shadow: 1px 1px 1px #111;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+#cfp-sf-content-id ul {
+  list-style: disc outside none;
+  padding: 0.5rem;
+}
+
+#cfp-sf-content-id li {
+  padding: 0.3rem;
+}
+
+#cfp-be-content-id {
+  margin-top: 5px;
+}
+
+#cfp-be-content-id ul {
+  list-style: disc outside none;
+  padding: 0.5rem;
+}
+
+#cfp-be-content-id li {
+  padding: 0.3rem;
+}
+
+#cfp-fe-content-id {
+  margin-top: 5px;
+}
+
+#cfp-fe-content-id ul {
+  list-style: disc outside none;
+  padding: 0.5rem;
+}
+
+#cfp-fe-content-id li {
+  padding: 0.3rem;
+}
+
+
+/** form input */
+
+#cfp-contact-details{
+  color: #333;
+}
+
+#cfp-contact-details h3{
+  margin-top: 10px;
+}
+
+#cfp-contact-details input {
+  width: 85vw;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background: transparent;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 0.5px solid #3AEBEE;
+}
+
+#cfp-contact-details label {
+  padding-top: 1rem;
+}
+
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  padding: 10px 50px 10px 10px;
+  background: url(../images/downward-arrow-8px.png) no-repeat 95% center;
+  align-content: center;
+  align-items: center;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 0.5px solid #3AEBEE;
+  font-style: normal;
+  width:85vw;
+  color: #333;
+}
+
+
+
+.cfp-submit-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+
+.cfp-btn-submit{
+  background-color: #3AEBEE;
+  color: #ffffff;
+  text-shadow: 0.5px 0.5px 0.5px #111;
+  font-size: 2rem;
+  min-width: 30vw;
+  display: block;
+  border-radius: 24px;
+  box-shadow: 0 3px 1px 0 #111111;
+}
+
+.cfp-btn-submit:hover {
+  background-color: #34D2D4;
+}
+
+.cfp-btn-submit:active {
+  background-color: lighten(#34D2D4, 50%);
+  box-shadow: none;
+  margin-bottom: -3px;
+  margin-top: 3px;
+}
+.form-error{
+  border-bottom: red !important;
+}
+.error-msg{
+  color:red;
+}
+
+
+/** form input */
+
+/** teaching method */
+
+.teaching-method{
+  margin-top: 10px;
+}
+.method-container{
+  margin-top: 10px;
+}
+.method-container img{
+  padding:50px;
+  max-height: 40vh;
+}
+/** teaching method */
+
+footer {
+  background-color: #EAEAEA;
+  color: #333;
+  padding: 1rem;
+}
+
+#cfp-contact-foo p {
+  margin-bottom: 0.5rem;
+}
+
+#cfp-contact-foo a {
+  color: #000;
+  text-decoration-style: solid;
+}
+
+#cfp-contact-foo-mail {
+  margin-bottom: 1rem;
+}
+
+#cfp-social-foo a {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.fa-facebook-square {
+  color: #3b5998;
+}
+
+.fa-twitter-square {
+  color: #00aced;
+}
+
+.fa-google-plus-square {
+  color: #dd4b39;
+}
+
+.fa-instagram {
+  color: #517fa8;
+}
+
+.fa-facebook-square:hover, .fa-twitter-square:hover, .fa-google-plus-square:hover, .fa-instagram:hover {
+  color: #b1b1b1;
+}
+
+#cfp-contact-foo, #cfp-hours-foo, #cfp-social-foo {
+  padding: 0.5rem;
+}
+
+#cfp-contact-foo h6 {
+  color: #111;
+}
+
+#cfp-hours-foo h6 {
+  color: #111;
+}
+
+#cfp-social-foo h6 {
+  color: #111;
+}
+
+/**profile section*/
+
+.facilitator-profile{
+  margin-top: 10px;
+}
+
+.cfp-profile-image{
+  width:20rem;
+  height:14rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.cfp-profile-name h5{
+  text-transform: capitalize;
+  color: #3AEBEE;
+  display: flex;
+  justify-content: center;
+}
+
+.cfp-profile-name p{
+  max-width: 80vw;
+  margin-left: 10vw;
+}
+
+/**profile section*/
+
+/*on mobile devices*/
+
+@media (min-width: 544px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+  .sub-head {
+    font-size: 1.125rem;
+  }
+  .text-brand {
+    font-size: 1rem;
+    color: blue;
+  }
+  #submit-button {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    width: auto;
+    min-width: 30vw;
+  }
+  #submit-button:active {
+    background-color: lighten(#34D2D4, 50%);
+    box-shadow: none;
+    margin-bottom: -2.02rem;
+    margin-top: 2.02rem;
+  }
+  #main-hero-section {
+    background-image: linear-gradient(rgba(96, 96, 96, 0.9), rgba(96, 96, 96, 0.6)), url('../images/mountain-1-960.jpg');
+  }
+}
+
+/*on tablets*/
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .sub-head {
+    font-size: 1.2rem;
+  }
+  .text-brand {
+    font-size: 1rem;
+    color: orange;
+  }
+  #submit-button {
+    margin-top: 2.5rem;
+    font-size: 2rem;
+    width: auto;
+    min-width: 25vw;
+  }
+  #submit-button:active {
+    background-color: lighten(#34D2D4, 50%);
+    box-shadow: none;
+    margin-bottom: -2.52rem;
+    margin-top: 2.52rem;
+  }
+  #main-hero-section {
+    background-image: linear-gradient(rgba(96, 96, 96, 0.9), rgba(96, 96, 96, 0.6)), url('../images/mountain-1-1280.jpg');
+  }
+  #cfp-fe-btn {
+    font-size: 1.4rem;
+  }
+  #cfp-be-btn {
+    font-size: 1.4rem;
+  }
+  #cfp-sf-btn {
+    font-size: 1.4rem;
+  }
+}
+
+/*on small dekstops and laptops*/
+
+@media (min-width: 992px) {
+  .fs-brand{
+    width: 10vw;
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 4.8rem;
+  }
+  .sub-head {
+    font-size: 1.25rem;
+  }
+  .text-brand {
+    font-size: 1rem;
+    color: green;
+  }
+  .main-banner {
+    margin-top: 1rem;
+  }
+  #submit-button {
+    margin-top: 2.5rem;
+    font-size: 2rem;
+    width: 25vw;
+  }
+  #submit-button:active {
+    background-color: lighten(#34D2D4, 50%);
+    box-shadow: none;
+    margin-bottom: -2.55rem;
+    margin-top: 2.55rem;
+  }
+  #main-hero-section {
+    background-image: linear-gradient(rgba(96, 96, 96, 0.9), rgba(96, 96, 96, 0.6)), url('../images/mountain-1-1280.jpg');
+  }
+  #cfp-fe-btn {
+    font-size: 1.5rem;
+  }
+  #cfp-be-btn {
+    font-size: 1.5rem;
+  }
+  #cfp-sf-btn {
+    font-size: 1.5rem;
+  }
+}
+
+/* on large desktops*/
+
+@media (min-width: 1200px) {
+  .fs-brand{
+    width: 10vw;
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 4.8rem;
+  }
+  .sub-head {
+    font-size: 1.25rem;
+  }
+  .text-brand {
+    font-size: 1.25rem;
+    color: gray;
+  }
+  .main-banner {
+    margin-top: 2rem;
+  }
+  #submit-button {
+    margin-top: 6rem;
+    font-size: 2rem;
+    width: 20vw;
+  }
+  #submit-button:active {
+    background-color: lighten(#34D2D4, 50%);
+    box-shadow: none;
+    margin-bottom: -6.01rem;
+    margin-top: 6.01rem;
+  }
+  #main-hero-section {
+    background-image: linear-gradient(rgba(96, 96, 96, 0.9), rgba(96, 96, 96, 0.6)), url('../images/mountain-1-1280.jpg');
+    /*background-image: url('../images/technology-1-1200-800.jpg');*/
+  }
+  #cfp-fe-btn {
+    font-size: 1.5rem;
+  }
+  #cfp-be-btn {
+    font-size: 1.5rem;
+  }
+  #cfp-sf-btn {
+    font-size: 1.5rem;
+  }
+}

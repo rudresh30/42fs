@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="42 Fullstack static">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body id="bootstrap-overrides">
+
+  <!--logo and navbar section -->
+  <div class="container-fluid  nav-hero">
+    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-toggleable-md navbar-light bg-light">
+
+      <a class="navbar-brand text-responsive fs-brand" id="navbrand" href="#">
+        <img src="./images/42logo.jpg" alt="Fullstack logo" class="img-fluid">
+        <span>India's Premier Code School</span>
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+        ☰
+      </button>
+      <div class="collapse navbar-collapse" id="exCollapsingNavbar2">
+        <ul class="navbar-nav justify-content-end ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#main-hero-section">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cfp-learning-areas">Learning Areas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cfp-course-content">Course Content</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Teaching Method</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cfp-footer">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--logo and navbar ends-->
+  <!--hero section -->
+  <section class="hero-section" id="main-hero-section">
+    <div class="container-fluid">
+      <h1 class="text-center main-head" id="hero-title">Become a Fullstack Software Engineer</h1>
+      <div class="row">
+        <div class="col-sm-12 col-lg-12 ">
+          <h2 class="sub-head text-left" id="hero-para">Learn the PERN stack. 42fs is only academy in Ahmedabad providing classroom-based Fullstack software engineering
+            training using Nodejs and Reactjs - the latest in web technologies and used by majority of silicon valley start-ups
+            - taught by ex Oracle and Accenture software architect.</h2>
+        </div>
+        <div class="col-sm-12 col-lg-4 main-banner">
+          <h6 class="text-center" id="launch-tag">Special Launch Price:
+            <s>Rs 34650</s>
+            <b>Rs 27450</b>
+          </h6>
+        </div>
+        <div class="col-sm-12 col-lg-4 main-banner">
+          <h6 class="text-center">Starting May 14, 2018</h6>
+        </div>
+        <div class="col-sm-12 col-lg-4 main-banner">
+          <h6 class="text-center">
+            <i class="fa fa-phone"></i>
+            <span> &nbsp;&NonBreakingSpace; </span>
+            <b>07575042942</b>
+          </h6>
+        </div>
+        <div class="form-group text-center col-sm-12">
+          <button class="btn btn-primary" id="submit-button">View Syllabus</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--hero section ends -->
+  <!--The slider-->
+  <div class="slider container-fluid" id="cfp-learning-areas">
+    <div class="row">
+      <div class="col-sm-12">
+        <h3 class="text-center">Master Fullstack Basics</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-lg-6">
+        <img class="img-responsive img-rounded img-slider" src="./images/static-assets.svg">
+      </div>
+      <div class="col-sm-12 col-lg-6 wrap">
+        <p class="text-left slider-para">PERN stack stands for Postgresql, Express, React and Node. Fullstack engineers are among the highest paid professionals
+          today and their demand is increasing because they solve both client-side(frontend) and server-side (backend) problems.
+          <a class="lttreadmorebtn">Read more</a>
+        </p>
+        <p id="ltt-para" class="hide">
+          It is a must have skill if you want to work for top technology companies like Google, Facebook, Amazon, Uber and Flipkart.
+          Learn the art of programming using the latest technologies - Jquery, Node, Express, React, Redux and React-native.
+          Our practical-first approach will give you experience and confidence to develop and deploy your apps in production
+          environment - just like how experienced professionals would do.
+          <a class="lttreadlessbtn"> Read less</a>
+        </p>
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm-12">
+        <h3 class="text-center">Learn Modern Tools</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-lg-6 order-lg-2">
+        <img class="img-responsive img-rounded img-slider" src="./images/building-blocks.svg">
+      </div>
+      <div class="col-sm-12 col-lg-6 order-lg-1">
+        <p class="text-left slider-para">All renowned software professionals will swear by the tools that they use for their job- be it editor or version
+          control system, dev tools or tools that automate build process.
+          <a class="mttreadmorebtn"> Read more</a>
+        </p>
+        <p id="mtt-para" class="hide">We have carefully selected the tools used by top-notch silicon-valley programmers. Advertise your knowledge of tools
+          like Atom editor, Git version control, Vagrant, Nginx reverse-proxy, EJS templating engine, Gulp and Mocha and
+          you're sure to stand-out from the crowd. In addition, no software engineering resume is complete without knowledge
+          of Linux. Our course has special emphasis on getting required Linux skills - both desktop and server OS versions
+          of Ubuntu. You will also learn how professionals setup secure websites on Cloud.
+          <a class="mttreadlessbtn"> Read less</a>
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm-12">
+        <h3 class="text-center">Demonstrate Your Confidence</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-lg-6">
+        <img class="img-responsive img-rounded img-slider" src="./images/in-the-office.svg">
+      </div>
+      <div class="col-sm-12 col-lg-6">
+        <p class="text-left slider-para">Software development is a very competitive place. It is difficult to get a job but it's even more difficult to carve
+          out a niche and make a successful career.
+          <a class="gtcreadmorebtn"> Read more</a>
+        </p>
+        <p id="gtc-para" class="hide">Technical skills alone may get you into an entry-level job but to grow and to get promoted, you need soft skills
+          such as communication skills, networking skills, job hunting skills and leadership skills. With over 15 years of
+          international experience at top multi-national companies across India, South Africa and Europe and MBA degree from
+          HEC Paris - let our founder and chief instructor give you some practical tips and fast-track you for success.
+          <a class="gtcreadlessbtn"> Read less</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--slider ends-->
+  <!--Course Content-->
+  <div class="course-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3 class="text-center" id="cfp-course-content">Course Content</h3>
+        </div>
+      </div>
+      <!--front end course content -->
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <button class="btn btn-fe-content" id="cfp-fe-btn">Front End Course Content
+            <span class="fa fa-chevron-right" id="cfp-fe-chevdown"></span>
+          </button>
+        </div>
+      </div>
+      <div class="cfp-fe-content text-left hide" id="cfp-fe-content-id">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6" id="cfp-fe-content">
+            <h5>Static Website </h5>
+            <ul class="list-group">
+              <!--<li  >how to setup development environment on your workstation?</li>-->
+              <li>How to structure the website?</li>
+              <li>How to use various html elements and how to style them using css?</li>
+              <li>What is bootstrap4 and how to use it in your website?</li>
+              <li>How to enhance bootstrap's functionality?</li>
+              <li>What is responsive design and how to make your website responsive?</li>
+            </ul>
+          </div>
+          <div class="cols-sm-12 col-lg-6">
+            <h5>Dynamic Website </h5>
+            <ul>
+              <li>Javascript basics and Document Object Model (DOM)</li>
+              <!--<li  >how to make website interactive using javascript</li>-->
+              <li>What is JQuery and how to use it to speed up development?</li>
+              <li>What is Reactjs and how it is different from other frontend frameworks like Angular?</li>
+              <li>How to create single page apps using React?</li>
+              <li>Create Android and iOS apps using React-Native</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--front-end content ends -->
+      <!--back-end course content -->
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <button class="btn btn-be-content" id="cfp-be-btn">Back End Course Content
+            <span class="fa fa-chevron-right" id="cfp-be-chevdown"></span>
+          </button>
+        </div>
+      </div>
+      <div class="cfp-be-content text-left hide" id="cfp-be-content-id">
+        <div class="row">
+          <div class="col-sm-12">
+            <h5 class="text-center">Server-side Javascript and Networking for Web</h5>
+            <ul>
+              <li>What happens on Server? http request/response verbs</li>
+              <li>Asynchronous programming using Nodejs and Javascript</li>
+              <li>Introduction to database and sql using Postgresql</li>
+              <li>What are web frameworks? Introduction to Express framework</li>
+              <li>How to create a CRUD Webapp using Express</li>
+              <li>How to connect to and update database using Express?</li>
+              <li>What is MVC architecture? How to use it with EJS templating engine?</li>
+              <li>How to create RESTful APIs using Express Router</li>
+              <li>How to access third-party APIs? How to create & expose your own APIs?</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--backend course content ends -->
+      <!-- soft skills course content -->
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <button class="btn btn-sf-content" id="cfp-sf-btn">Dev Tools and Career Progression
+            <span class="fa fa-chevron-right" id="cfp-sf-chevdown"></span>
+          </button>
+        </div>
+      </div>
+      <div class="cfp-sf-content text-left hide" id="cfp-sf-content-id">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6">
+            <h5>Professional Tools</h5>
+            <ul>
+              <li>Modern editors and how to customize them</li>
+              <li>Git version control system - using Github</li>
+              <li>Build tools - Webpack, Gulpjs</li>
+              <li>How to setup Linux Server OS for cloud hosting of your website</li>
+              <li>How to configure Nginx with nodejs and take advantage of multiple-core processors</li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <h5>Career in Tech</h5>
+            <ul>
+              <li>How to create your CV? what to emphasize?</li>
+              <li>How to improve your chances of being picked by a large technology company?</li>
+              <li>How to create a professional linkedin profile?</li>
+              <li>Communication and networking skills for software engineers</li>
+              <li>Interview preparation and salary negotiation at large companies</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- soft skills course content ends-->
+      <div>
+        <br>
+      </div>
+    </div>
+  </div>
+  <!--Course Content Ends-->
+  <!--Facilitator profile-->
+  <section class="facilitator-profile">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="cfp-profile-title text-center">
+            <h3>Our Instructor</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="cfp-image-wrapper text-center">
+            <div class="cfp-profile-image">
+              <img src="./images/facilitator.jpg" alt="founder image" class="img-thumbnail rounded-circle">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="cfp-profile-name text-left">
+            <h5>Rudresh Pandya</h5>
+            <p>Rudresh is a Computer Engineer from Mumbai University and MBA from HEC Paris. He has around 15 years of experience
+              in Computer Software Industry. He has lived and worked across Asia, Africa and Europe and has executed complex,
+              large-scale software projects as Software Engineer, Team Lead and Solution Architect. Most recently he was
+              a Senior Manager at Accenture, Johannesburg where he led the engineering team to implement Digital Channels
+              for a large European bank across African continent. He is a tech enthusiast with a passion for learning and
+              teaching technology. In his free time he enjoys reading, playing chess and of course - coding!
+            </p>
+            <p>Join us to gain from his immense international experience to learn not just about technology but also about the
+              tech industry and how to grow your career</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!--Facilitator profile-->
+  <hr>
+  <!--Teaching Method-->
+  <section class="teaching-method">
+    <div class="container-fluid">
+      <!--title-->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="cfp-teach-title text-center">
+            <h3>Our Unique Approach to Learning</h3>
+            <p>Our objective is that our learners should be able to conceive, develop and launch a world-class application be
+              it a website, mobile app or both by the end of the course. Our
+              <strong>practical-first</strong> approach means that learners will learn by doing.</p>
+          </div>
+        </div>
+      </div>
+      <!--title-->
+      <!--method cards-->
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <div class="method-container text-center">
+            <div class="method-title">
+              <h3>Practical First</h3>
+              <img src="./images/practical-first-1.svg" alt="practical first image" class="img-fluid rounded">
+            </div>
+            <div class="method-details">
+              <p>We strongly believe that the best learning happens when learners implement concepts. Hence we have developed
+                our course on
+                <strong>practical-first</strong> approach. At 42fs all learning is based on real world implementation - like developing
+                a secured Payments API or creating a Normalized Database.
+                <strong>Our classroom is the office.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="method-container text-center">
+            <div class="method-title">
+              <h3>Silicon Valley Way</h3>
+              <img src="./images/silicon-valley.svg" alt="practical first image" class="img-fluid rounded">
+            </div>
+            <div class="method-details">
+              <p>We believe in training people to be the best in business - that means learning how the finest programmers think
+                of solving a problem. While programming is as much an art as it is a science, there are some common best-practices
+                that have a direct impact on quality of final outcome. It's a bit like
+                <strong>learning how to run vs learning how professional athletes approach running</strong>...Makes a big difference!!!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="method-container text-center">
+            <div class="method-title">
+              <h3>Incremental Learning</h3>
+              <img src="./images/innovative-design.svg" alt="practical first image" class="img-fluid rounded">
+            </div>
+            <div class="method-details">
+              <p>We have carefully put-together an incremental set of exercises that are linked to each concept. Each concept
+                builds on top of another one that results in integrated learning. This is also the problem solving approach
+                that is used by almost all modern companies such as Google and Facebook.
+                <strong>Each exercise is linked to the big-picture and solves a real-world problem.
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--method cards-->
+    </div>
+  </section>
+  <!--Teaching Method-->
+  <hr>
+  <div class="interest">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h6>Interested? Let us know below</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Form Group-->
+  <div class="form-group container" id="cfp-contact-details">
+    <div class=" row">
+      <h3 class="col-sm-12 text-center">
+        Contact Form
+      </h3>
+      <form id="contactForm" role="form" method="post" action="/">
+        <div class="form-element col-sm-12 text-left">
+          <label for="input-name">Name</label>
+          <input type="text" class="form-control" id="input-name" name="name" autocomplete="off" placeholder="Enter Name">
+        </div>
+        <div class=" form-element col-sm-12 text-left">
+          <label for="input-email">Email</label>
+          <input type="email" class="form-control" id="input-email" name="email" autocomplete="off" placeholder="Enter Email">
+        </div>
+        <div class="form-element col-sm-12 text-left">
+          <label for="input-phone">Contact Number</label>
+          <input type="text" class="form-control" id="input-phone" name="contactno" autocomplete="off" placeholder="Enter Contact Number">
+        </div>
+        <div class="form-element col-sm-12">
+          <label for="batch-select">View Available Batches</label>
+          <br>
+          <br>
+          <select id="batch-select" class="batch-selector" title="Select a batch to enroll" name="batch" autocomplete="off">
+            <optgroup label="morning mon-wed-fri">
+              <option value="1">14 May to 27 July | 07:45-09:45</option>
+            </optgroup>
+            <optgroup label="afternoon tue-thu-sat">
+              <option value="2">22 May to 4 August | 13:15-15:15</option>
+            </optgroup>
+            <optgroup label="evening tue-thu-sat">
+              <option value="3">22 May to 4 August | 18:15-20:15</option>
+            </optgroup>
+          </select>
+          <small>Maximum 12 students per batch</small>
+        </div>
+        <div class="col-sm-12 cfp-submit-btn text-center">
+          <button class="btn cfp-btn-submit" id="cfp-submit-form" type="submit" value="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class='alert-modal'>
+    <!-- Modal -->
+    <div id="alertModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Thank You</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+
+          </div>
+          <div class="modal-body">
+            <p id='alert-msg'></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <!--Form Group Ends-->
+
+  <!--Footer starts -->
+  <footer>
+    <div class="container-fluid">
+      <div class="row text-center" id="cfp-footer">
+        <div class="col-sm-12 col-md-4" id="cfp-contact-foo">
+          <h6>Contact Us</h6>
+          <hr>
+          <p>
+            <i class="fa fa-phone"></i>
+            <span> &nbsp;&NonBreakingSpace; </span>+91-75750 42942</p>
+          <a href='mailto:enroll@42fullstack.in?subject=Batch%20Inquiry'>
+            <i class="fa fa-envelope" id="cfp-contact-foo-mail"></i>
+            <span> &nbsp;&nbsp;</span>
+            <span>enroll@42fullstack.in</span>
+          </a>
+          <br>
+          <a href='https://goo.gl/maps/TQP1RErrfTp'>
+            <i class="fa fa-building"></i>
+            <span> &nbsp;&nbsp;</span>
+            <span>42 Fullstack Academy</span>
+          </a>
+          <br>
+          <span>G110,</span>
+          <span>&nbsp;&nbsp;</span>
+          <span>Titanium City Centre,</span>
+          <p>Anandnagar,</span>
+            <span>&nbsp;&nbsp;</span>
+            <span>Ahmedabad - 380051</p>
+        </div>
+        <div class="col-sm-12 col-md-4" id="cfp-hours-foo">
+          <h6>Operating Hours</h6>
+          <hr>
+          <p>Mon-Sat: 7:30AM to 8:30PM</p>
+          <p>Sun: Closed</p>
+        </div>
+        <div class="col-sm-12 col-md-4" id="cfp-social-foo">
+          <h6>Social</h6>
+          <hr>
+          <a href="https://facebook.com">
+            <i class="fa fa-facebook-square"></i>
+          </a>
+          <a href="https://twitter.com">
+            <i class="fa fa-twitter-square"></i>
+          </a>
+          <a href="https://googleplus.com">
+            <i class="fa fa-google-plus-square"></i>
+          </a>
+          <a href="https://instagram.com">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </div>
+        <div class="col-12">
+          <hr>
+          <h6>&copy; 42fullstack.in</h6>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--Footer ends -->
+  <!--load bootstrap compiled js, jquery and popper js. may change cdn later -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/jquery-form/form@4.2.2/dist/jquery.form.min.js" integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i"
+    crossorigin="anonymous"></script>
+  <script src="./lib/bootstrap-select-1.13.0/js/bootstrap-select.min.js"></script>
+  <script src="./lib/modernizr-custom.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

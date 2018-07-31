@@ -4,63 +4,77 @@ const bodyParser = require('body-parser');
 const pg = require('pg');
 const helmet = require('helmet');
 const xssFilters = require('xss-filters');
-const validator = require('validator');
+const expressValidator = require('express-validator');
 
 const app = express();
 
+//view engine
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+
 app.use(helmet());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(expressValidator());
 
-const staticpath = path.join(__dirname, '/src');
+
+const staticpath = path.join(__dirname, 'public');
 app.use(express.static(staticpath));
-
 
 app.get('/', function (req, res, next) {
   try {
-    res.render('./src/index.html');
+    res.render('index');
   }
   catch (err) {
     next(err);
   }
-
-
 });
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
 const connectString = 'postgres://bqupwvgf:6aKL3RRcDitWPgtojtLHGzpHmoLoDKhU@elmer.db.elephantsql.com:5432/bqupwvgf';
-/*
-let client = new pg.Client({ connectionString: connectString });
-client.connect();
 
-let queryobj = {
-  text: 'select * from batch_master where batch_id > $1',
-  values: [1]
-  //rowMode:'array'
-}
-client.query(queryobj, (err, res) => {
-  if (err) {
-    console.log(err.stack);
+//middleware validate function. Return JSON if validation fails. Otherwise call next()
+function validateInput(req, res, next) {
+  var qName = req.body.name;
+  var qEmail = req.body.email;
+  var qContactno = req.body.contactno;
+  var qBatch = req.body.batch;
 
-  } else {
-    res.rows.forEach((resultRow) => {
-      console.log(resultRow);
+  req.checkBody('name', `Please specify your name`).notEmpty();
+  req.checkBody('name', `Name should only have letters[a-z..A-Z]`).isAlpha();
+  req.checkBody('name', `Name should have min: 2 and max: 30 letters`).isLength({ min: 2, max: 30 });
+
+  req.checkBody('email', `please specify your email id`).notEmpty();
+  req.checkBody('email', `please provide a valid email`).isEmail();
+
+  req.checkBody('contactno', `Please provide a valid phone number`).isLength({ min: 8, max: 18 }).isNumeric();
+
+  req.checkBody('batch', `Please select a valid batch`).notEmpty().isIn([1, 2, 3]);
+
+  req.getValidationResult()
+    .then(function (results) {
+      if (results.isEmpty() === false) {
+        //results not empty means errors present
+        console.log('errors present');
+        var resArray = results.array();
+        res.json({ result: resArray[0].msg });
+        next(new Error('validation failure - ${resArray}'));
+      } else {
+        //no errors - continue
+        console.log('in success ');
+        next();
+      }
     })
-  }
-  client.end();
-});*/
-//temp test for post
-
-
+};
 
 //handle contact form post data
-app.post("/submit", function (req, res, next) {
+app.post("/submit", validateInput, function (req, res, next) {
   let client = new pg.Client({ connectionString: connectString });
   client.connect();
   console.log(req.body);
-  var qName = red.body.name;
-  var qEmail = red.body.email;
-  var qContactno = red.body.contactno;
-  var qBatch = red.body.batch;
+  var qName = req.body.name;
+  var qEmail = req.body.email;
+  var qContactno = req.body.contactno;
+  var qBatch = req.body.batch;
   let queryobj = {
     text: `insert into inquiries values(nextval('inq_sequence'),$1,$2,$3,localtime,$4,current_date)`,
     values: [qName, qEmail, qContactno, qBatch]
