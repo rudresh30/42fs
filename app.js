@@ -18,7 +18,7 @@ app.set('views', path.join(__dirname, 'views'));
 const cspMiddleware = csp({
   policies: {
     'default-src': [csp.SELF],
-    'img-src': [csp.SELF,],
+    'img-src': [csp.SELF],
     'font-src': [`*.fonts.googleapis.com`, `*.fontawesome.com`, `*.bootstrapcdn.com`],
     'style-src': [csp.NONCE, `*.fonts.googleapis.com`, `*.fontawesome.com`, `*.bootstrapcdn.com`],
     'script-src': [csp.NONCE, 'strict-dynamic', `*.jquery.com`, `*.cloudflare.com`, `*.bootstrapcdn.com`, `*.jsdelivr.net`],
