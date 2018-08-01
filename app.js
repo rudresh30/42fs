@@ -5,6 +5,7 @@ const pg = require('pg');
 const helmet = require('helmet');
 const xssFilters = require('xss-filters');
 const expressValidator = require('express-validator');
+const csp = require('express-csp-header');
 
 const app = express();
 
@@ -12,7 +13,24 @@ const app = express();
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
+
+//content security policy - with nonce
+const cspMiddleware = csp({
+  policies: {
+    'default-src': [csp.SELF],
+    'img-src': [csp.SELF,],
+    'font-src': [`*.fonts.googleapis.com`, `*.fontawesome.com`, `*.bootstrapcdn.com`],
+    'style-src': [csp.NONCE, `*.fonts.googleapis.com`, `*.fontawesome.com`, `*.bootstrapcdn.com`],
+    'script-src': [csp.NONCE, 'strict-dynamic', `*.jquery.com`, `*.cloudflare.com`, `*.bootstrapcdn.com`, `*.jsdelivr.net`],
+    'object.src': [csp.NONE],
+    'block-all-mixed-content': true,
+    'base-uri': [csp.NONE]
+  }
+});
+
+
 app.use(helmet());
+app.use(cspMiddleware);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(expressValidator());
@@ -21,9 +39,17 @@ app.use(expressValidator());
 const staticpath = path.join(__dirname, 'public');
 app.use(express.static(staticpath));
 
+
+
+
+
 app.get('/', function (req, res, next) {
   try {
-    res.render('index');
+    console.log(req.nonce);
+    res.render('index', {
+      nonce: req.nonce,
+      title: '42 Fullstack Academy'
+    });
   }
   catch (err) {
     next(err);
@@ -65,6 +91,8 @@ function validateInput(req, res, next) {
       }
     })
 };
+
+
 
 //handle contact form post data
 app.post("/submit", validateInput, function (req, res, next) {
