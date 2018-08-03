@@ -2,11 +2,11 @@
   border: 1px solid red !important;
 }*/
 
-
-
-#bootstrap-overrides {
+body{
   font-family: 'Lato', sans-serif;
   background-color: #f8f9fa;
+  line-height: 1.2rem;
+  color: #444;
 }
 
 .fs-brand{
@@ -31,10 +31,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-  height: 85vh;
+  min-height: 85vh;
   width: 100%;
   border-bottom: 5px #444 solid;
 }
+
 
 .slider-para {
   margin-top: 15px;
@@ -135,7 +136,8 @@ a.mttreadlessbtn:hover {
 
 .slider {
   margin-top: 1rem;
-  color: #222;
+  color: #333;
+  line-height: 1.2;
 }
 
 .img-slider {
@@ -386,9 +388,18 @@ select{
 
 /** teaching method */
 
+
+
 .teaching-method{
   margin-top: 10px;
+  color: #444;
 }
+
+.cfp-teach-title p{
+  margin: 10px auto;
+  padding: 5px;
+}
+
 .method-container{
   margin-top: 10px;
 }
@@ -396,7 +407,17 @@ select{
   padding:50px;
   max-height: 40vh;
 }
+
 /** teaching method */
+
+/***Interest banner */
+
+.interest{
+  font-style: italic;
+}
+
+
+/***Interest banner */
 
 footer {
   background-color: #EAEAEA;
@@ -462,10 +483,12 @@ footer {
 
 .facilitator-profile{
   margin-top: 10px;
+  color: #444;
 }
 
 .cfp-profile-image{
   width:20rem;
+  max-width: 90%;
   height:14rem;
   border-radius: 50%;
   display: inline-block;

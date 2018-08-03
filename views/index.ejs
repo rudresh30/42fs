@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="42 Fullstack static">
+  <link nonce=<%= nonce %> rel="stylesheet" href="css/reset.css">
   <link nonce=<%= nonce %> href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link nonce=<%= nonce  %> rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
   crossorigin="anonymous">
@@ -42,7 +43,7 @@
             <a class="nav-link" href="#cfp-course-content">Course Content</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Teaching Method</a>
+            <a class="nav-link" href="#method">Teaching Method</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#cfp-footer">Contact Us</a>
@@ -58,7 +59,7 @@
       <h1 class="text-center main-head" id="hero-title">Become a Fullstack Software Engineer</h1>
       <div class="row">
         <div class="col-sm-12 col-lg-12 ">
-          <h2 class="sub-head text-left" id="hero-para">Learn the PERN stack. 42fs is only academy in Ahmedabad providing classroom-based Fullstack software engineering
+          <h2 class="sub-head text-left" id="hero-para">Learn the MERN & PERN stacks. 42fs is only academy in Ahmedabad providing classroom-based Fullstack software engineering
             training using Nodejs and Reactjs - the latest in web technologies and used by majority of silicon valley start-ups
             - taught by ex Oracle and Accenture software architect.</h2>
         </div>
@@ -97,7 +98,7 @@
         <img class="img-responsive img-rounded img-slider" src="./images/static-assets.svg">
       </div>
       <div class="col-sm-12 col-lg-6 wrap">
-        <p class="text-left slider-para">PERN stack stands for Postgresql, Express, React and Node. Fullstack engineers are among the highest paid professionals
+        <p class="text-left slider-para">M/PERN stack stands for Mongodb/Postgresql, Express, React and Node. Fullstack engineers are among the highest paid professionals
           today and their demand is increasing because they solve both client-side(frontend) and server-side (backend) problems.
           <a class="lttreadmorebtn">Read more</a>
         </p>
@@ -194,7 +195,7 @@
             <ul>
               <li>Javascript basics and Document Object Model (DOM)</li>
               <!--<li  >how to make website interactive using javascript</li>-->
-              <li>What is JQuery and how to use it to speed up development?</li>
+              <li>What is JQuery and how to use it to speed up development? - Animations, Ajax and UI</li>
               <li>What is Reactjs and how it is different from other frontend frameworks like Angular?</li>
               <li>How to create single page apps using React?</li>
               <li>Create Android and iOS apps using React-Native</li>
@@ -219,6 +220,7 @@
               <li>What happens on Server? http request/response verbs</li>
               <li>Asynchronous programming using Nodejs and Javascript</li>
               <li>Introduction to database and sql using Postgresql</li>
+              <li>Introduction to NoSQL database using Mongodb</li>
               <li>What are web frameworks? Introduction to Express framework</li>
               <li>How to create a CRUD Webapp using Express</li>
               <li>How to connect to and update database using Express?</li>
@@ -276,7 +278,7 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="cfp-profile-title text-center">
-            <h3>Our Instructor</h3>
+            <h3>Our Lead Instructor</h3>
           </div>
         </div>
       </div>
@@ -302,7 +304,7 @@
               teaching technology. In his free time he enjoys reading, playing chess and of course - coding!
             </p>
             <p>Join us to gain from his immense international experience to learn not just about technology but also about the
-              tech industry and how to grow your career</p>
+              tech industry and how to grow your career.</p>
           </div>
         </div>
       </div>
@@ -313,7 +315,7 @@
   <!--Facilitator profile-->
   <hr>
   <!--Teaching Method-->
-  <section class="teaching-method">
+  <section id="method" class="teaching-method">
     <div class="container-fluid">
       <!--title-->
       <div class="row">
@@ -332,11 +334,11 @@
         <div class="col-sm-12 col-md-4">
           <div class="method-container text-center">
             <div class="method-title">
-              <h3>Practical First</h3>
+              <h5>Practical First</h5>
               <img src="./images/practical-first-1.svg" alt="practical first image" class="img-fluid rounded">
             </div>
             <div class="method-details">
-              <p>We strongly believe that the best learning happens when learners implement concepts. Hence we have developed
+              <p>We strongly believe that the best learning happens when learners <em>implement</em> concepts. Hence we have developed
                 our course on
                 <strong>practical-first</strong> approach. At 42fs all learning is based on real world implementation - like developing
                 a secured Payments API or creating a Normalized Database.
@@ -348,13 +350,13 @@
         <div class="col-sm-12 col-md-4">
           <div class="method-container text-center">
             <div class="method-title">
-              <h3>Silicon Valley Way</h3>
+              <h5>The Silicon Valley Way</h5>
               <img src="./images/silicon-valley.svg" alt="practical first image" class="img-fluid rounded">
             </div>
             <div class="method-details">
               <p>We believe in training people to be the best in business - that means learning how the finest programmers think
-                of solving a problem. While programming is as much an art as it is a science, there are some common best-practices
-                that have a direct impact on quality of final outcome. It's a bit like
+                of solving a problem. While programming is as much an art as a science, there are some common best-practices
+                that have a direct impact on quality of your program. It's a bit like
                 <strong>learning how to run vs learning how professional athletes approach running</strong>...Makes a big difference!!!</p>
             </div>
           </div>
@@ -362,7 +364,7 @@
         <div class="col-sm-12 col-md-4">
           <div class="method-container text-center">
             <div class="method-title">
-              <h3>Incremental Learning</h3>
+              <h5>Incremental Learning</h5>
               <img src="./images/innovative-design.svg" alt="practical first image" class="img-fluid rounded">
             </div>
             <div class="method-details">
@@ -385,7 +387,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12 text-center">
-          <h6>Interested? Let us know below</h6>
+          <h6><em>Interested? Please provide your contact details and we'll contact you with more information</em></h6>
         </div>
       </div>
     </div>
