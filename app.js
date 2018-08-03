@@ -35,13 +35,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(expressValidator());
 
-
 const staticpath = path.join(__dirname, 'public');
 app.use(express.static(staticpath));
-
-
-
-
 
 app.get('/', function (req, res, next) {
   try {
@@ -92,8 +87,6 @@ function validateInput(req, res, next) {
     })
 };
 
-
-
 //handle contact form post data
 app.post("/submit", validateInput, function (req, res, next) {
   let client = new pg.Client({ connectionString: connectString });
@@ -122,7 +115,7 @@ app.post("/submit", validateInput, function (req, res, next) {
   })
 });
 
-let port = process.env.PORT || 3000;
+let port = process.env.PORT || 8080;
 app.listen(port, function () {
-  console.log('listening on port 3000');
+  console.log('listening on port 8080');
 });
