@@ -21,8 +21,8 @@ const cspMiddleware = csp({
     'img-src': [csp.SELF],
     'font-src': [`*.fonts.googleapis.com`, `*.fontawesome.com`, `*.bootstrapcdn.com`],
     'style-src': [csp.NONCE, `*.fonts.googleapis.com`, `*.fontawesome.com`, `*.bootstrapcdn.com`],
-    'script-src': [csp.NONCE, 'strict-dynamic', `*.jquery.com`, `*.cloudflare.com`, `*.bootstrapcdn.com`, `*.jsdelivr.net`],
-    'object.src': [csp.NONE],
+    'script-src': [csp.NONCE, `strict-dynamic`, `*.jquery.com`, `*.cloudflare.com`, `*.bootstrapcdn.com`, `*.jsdelivr.net`],
+    'object-src': [csp.NONE],
     'block-all-mixed-content': true,
     'base-uri': [csp.NONE]
   }
