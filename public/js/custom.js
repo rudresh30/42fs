@@ -139,7 +139,7 @@ $(document).ready(function () {
         email: true
       },
       contactno: {
-        required: false,
+        required: true,
         minlength: 8,
         maxlength: 18,
         digits: true
@@ -160,6 +160,7 @@ $(document).ready(function () {
         email: "Please provide a valid email address"
       },
       contactno: {
+        required: "Please provide contact number",
         minlength: "Phone number should have at least 8 digits - please provide STD code including '0' for landline",
         maxlength: "Phone number should have maximum 18 digits - please provide STD code including '0' for landline",
         digits: "phone number should only contain digits"

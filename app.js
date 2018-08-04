@@ -2,10 +2,12 @@ const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 const pg = require('pg');
+const favicon = require('serve-favicon');
 const helmet = require('helmet');
 const xssFilters = require('xss-filters');
 const expressValidator = require('express-validator');
 const csp = require('express-csp-header');
+const debug = require('debug')('app');
 
 const app = express();
 
@@ -29,8 +31,10 @@ const cspMiddleware = csp({
 });
 
 
+
 app.use(helmet());
 app.use(cspMiddleware);
+app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.png')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(expressValidator());
@@ -40,13 +44,13 @@ app.use(express.static(staticpath));
 
 app.get('/', function (req, res, next) {
   try {
-    console.log(req.nonce);
     res.render('index', {
       nonce: req.nonce,
       title: '42 Fullstack Academy'
     });
   }
   catch (err) {
+    debug(`error in get - ${err}`)
     next(err);
   }
 });
@@ -75,13 +79,12 @@ function validateInput(req, res, next) {
     .then(function (results) {
       if (results.isEmpty() === false) {
         //results not empty means errors present
-        console.log('errors present');
+        debug(`errors present in validation`);
         var resArray = results.array();
         res.json({ result: resArray[0].msg });
-        next(new Error('validation failure - ${resArray}'));
+        next(new Error(`validation failure - ${resArray}`));
       } else {
         //no errors - continue
-        console.log('in success ');
         next();
       }
     })
@@ -91,7 +94,6 @@ function validateInput(req, res, next) {
 app.post("/submit", validateInput, function (req, res, next) {
   let client = new pg.Client({ connectionString: connectString });
   client.connect();
-  console.log(req.body);
   var qName = req.body.name;
   var qEmail = req.body.email;
   var qContactno = req.body.contactno;
@@ -104,7 +106,7 @@ app.post("/submit", validateInput, function (req, res, next) {
   client.query(queryobj, (err, response) => {
     if (err) {
       res.json({ result: `Oops! Something went wrong. Please try again.` });
-      console.log(err);
+      debug(`error in database query - ${err}`);
       next(err);
 
     } else {
