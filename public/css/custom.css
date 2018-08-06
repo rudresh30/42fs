@@ -3,9 +3,9 @@
 }*/
 
 body{
-  font-family: 'Lato', sans-serif;
-  background-color: #f8f9fa;
-  line-height: 1.2rem;
+  font-family: 'Raleway', sans-serif;
+  
+  line-height: 1.4rem;
   color: #444;
 }
 
@@ -22,8 +22,8 @@ body{
 }
 
 
-#bootstrap-overrides .navbar-custom {
-  background-color: #3AEBEE;
+.navbar-custom {
+  background-color: #ffffff;
 }
 
 #main-hero-section {
