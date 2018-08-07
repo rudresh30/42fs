@@ -508,6 +508,21 @@ footer {
 
 /**profile section*/
 
+/**FAQ section */
+
+  .question{
+    color: #3AEBEE;
+  }
+  .answer{
+    color: #333;
+  }
+  .answer-list li{
+    list-style: disc inside none;
+  }
+
+/**FAQ section */
+
+
 /*on mobile devices*/
 
 @media (min-width: 544px) {
