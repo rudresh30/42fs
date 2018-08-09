@@ -16,6 +16,11 @@ body{
   font-size: 0.8rem;
   
 }
+.fs-brand img{
+  height: 24px;
+  width: 48px;
+}
+
 .fs-brand span{
   color: #333;
   margin-left: 5px;
@@ -27,13 +32,13 @@ body{
 }
 
 #main-hero-section {
-  background-image: linear-gradient(rgba(96, 96, 96, 0.9), rgba(96, 96, 96, 0.6)), url('../images/mountain-1-320.jpg');
+  /**background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../images/technology-3.jpeg');*/
+  background-image: url('../images/office-1.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-  min-height: 85vh;
   width: 100%;
-  border-bottom: 5px #444 solid;
+  
 }
 
 
@@ -104,9 +109,9 @@ a.mttreadlessbtn:hover {
 }
 
 .main-banner {
-  color: #3aebee;
+  color: #fff;
   text-align: center;
-  text-shadow: 1px 1px 1px #000;
+  
   font-size: 0.5rem;
   display: inline-block;
 }
@@ -149,18 +154,30 @@ a.mttreadlessbtn:hover {
 }
 
 h1 {
-  font-size: 2.4rem;
-  color: #ffffff;
-  text-shadow: 1px 1px 1px #000;
+  font-size: 2rem;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .sub-head {
   font-size: 1.0625rem;
-  color: #ffffff;
-  text-shadow: 1px 1px 1px #000;
+  color: #fff;
+  
   margin-top: 1rem;
   margin-bottom: 1rem;
+  
+  
+  animation: antext 4s steps(10,end); 
+  transition: all ease-in-out;
 }
+
+@keyframes antext { 
+  from {
+      width: 0;
+     transition: all 5s ease-in-out;
+  } 
+}
+
 
 .main-head {
   margin-top: 10px;
@@ -175,15 +192,16 @@ h1 {
 }
 
 .course-content{
-  background-image: linear-gradient(rgba(96, 96, 96, 0.8), rgba(96, 96, 96, 0.6)), url('../images/books-3.jpg');
+  /**background-image: linear-gradient(rgba(96, 96, 96, 0.8), rgba(96, 96, 96, 0.6)), url('../images/technology-3.jpeg');*/
+  background-color: #ccc;
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
 }
 #cfp-course-content{
   margin-top: 10px;
-  color: #3AEBEE;
-  text-shadow: 1px 1px 1px #111;
+  color: #555;
+  text-shadow: 0.5px 0.5px 0.5px #666;  
 }
 
 
@@ -194,11 +212,12 @@ h1 {
   margin-bottom: 8px;
   font-size: 1.2rem;
   background: none;
+  text-shadow: 0.5px 0.5px 0.5px #777;  
 }
 
 #cfp-fe-btn:hover {
   color: #e0e0e0;
-  background: #303030;
+  background: #999;
 }
 
 #cfp-fe-btn:focus {
@@ -212,7 +231,7 @@ h1 {
 #cfp-fe-content-id {
   margin-top: 5px;
   color: #ffffff;
-  text-shadow: 1px 1px 1px #111;
+  text-shadow: 0.5px 0.5px 0.5px #777;
   font-size: 1.1rem;
 }
 
@@ -227,7 +246,7 @@ h1 {
 
 #cfp-be-btn:hover {
   color: #e0e0e0;
-  background: #303030;
+  background: #999;
 }
 
 #cfp-be-chevdown {
@@ -236,7 +255,7 @@ h1 {
 
 #cfp-be-content-id {
   margin-top: 5px;
-  text-shadow: 1px 1px 1px #111;
+  text-shadow: 0.5px 0.5px 0.5px #777;
   font-size: 1.1rem;
 }
 
@@ -252,7 +271,7 @@ h1 {
 
 #cfp-sf-btn:hover {
   color: #e0e0e0;
-  background: #303030;
+  background: #999;
 }
 
 #cfp-sf-chevdown {
@@ -261,7 +280,7 @@ h1 {
 
 #cfp-sf-content-id {
   margin-top: 5px;
-  text-shadow: 1px 1px 1px #111;
+  text-shadow: 0.5px 0.5px 0.5px #777;
   font-size: 1.1rem;
   margin-bottom: 5px;
 }
@@ -408,6 +427,10 @@ select{
   max-height: 40vh;
 }
 
+.method-title{
+  color: #3AEBEE;
+}
+
 /** teaching method */
 
 /***Interest banner */
@@ -502,8 +525,8 @@ footer {
 }
 
 .cfp-profile-name p{
-  max-width: 80vw;
-  margin-left: 10vw;
+  max-width: 90vw;
+  text-align: center;
 }
 
 /**profile section*/
@@ -527,7 +550,7 @@ footer {
 
 @media (min-width: 544px) {
   h1 {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
   }
   .sub-head {
     font-size: 1.125rem;
@@ -548,16 +571,14 @@ footer {
     margin-bottom: -2.02rem;
     margin-top: 2.02rem;
   }
-  #main-hero-section {
-    background-image: linear-gradient(rgba(96, 96, 96, 0.9), rgba(96, 96, 96, 0.6)), url('../images/mountain-1-960.jpg');
-  }
+  
 }
 
 /*on tablets*/
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
   .sub-head {
     font-size: 1.2rem;
@@ -578,9 +599,7 @@ footer {
     margin-bottom: -2.52rem;
     margin-top: 2.52rem;
   }
-  #main-hero-section {
-    background-image: linear-gradient(rgba(96, 96, 96, 0.9), rgba(96, 96, 96, 0.6)), url('../images/mountain-1-1280.jpg');
-  }
+  
   #cfp-fe-btn {
     font-size: 1.4rem;
   }
@@ -600,7 +619,7 @@ footer {
     font-size: 1rem;
   }
   h1 {
-    font-size: 4.8rem;
+    font-size: 4rem;
   }
   .sub-head {
     font-size: 1.25rem;
@@ -623,9 +642,6 @@ footer {
     margin-bottom: -2.55rem;
     margin-top: 2.55rem;
   }
-  #main-hero-section {
-    background-image: linear-gradient(rgba(96, 96, 96, 0.9), rgba(96, 96, 96, 0.6)), url('../images/mountain-1-1280.jpg');
-  }
   #cfp-fe-btn {
     font-size: 1.5rem;
   }
@@ -645,10 +661,22 @@ footer {
     font-size: 1rem;
   }
   h1 {
-    font-size: 4.8rem;
+    font-size: 4rem;
   }
   .sub-head {
     font-size: 1.25rem;
+    animation: antext 4s steps(80,end); 
+    transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    white-space: normal;
+
+    
+    width: 100%;
+  }
+  @keyframes antext { 
+    from {
+        width: 0;
+       transition: all 2s ease-in-out;
+    } 
   }
   .text-brand {
     font-size: 1.25rem;
@@ -668,10 +696,7 @@ footer {
     margin-bottom: -6.01rem;
     margin-top: 6.01rem;
   }
-  #main-hero-section {
-    background-image: linear-gradient(rgba(96, 96, 96, 0.9), rgba(96, 96, 96, 0.6)), url('../images/mountain-1-1280.jpg');
-    /*background-image: url('../images/technology-1-1200-800.jpg');*/
-  }
+
   #cfp-fe-btn {
     font-size: 1.5rem;
   }
