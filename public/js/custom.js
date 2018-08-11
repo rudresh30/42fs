@@ -192,6 +192,7 @@ $(document).ready(function () {
         });
       };
 
+
       postData().done(function (data) {
         $('#alert-msg').text(data.result);
         $('#alertModal').modal('show');
@@ -249,7 +250,22 @@ $(document).ready(function () {
   //create data object for post
 
 
-  //submit form data
+  //submit form data - done!!!!!!!!!
+
+
+  //text animation hero paragraph
+
+  var typeOptions = {
+    stringsElement: '#hero-para',
+    typeSpeed: 50,
+    backSpeed: 20,
+    startDelay: 100,
+    loop: true,
+  };
+
+  var heroTyped = new Typed('#hero-typed', typeOptions);
+
+
 
   //media queries using modernizr
   //on very small screens
