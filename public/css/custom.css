@@ -202,7 +202,7 @@ h1 {
 }
 
 .course-content{
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../images/tech-screen-2.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../images/tech-screen-2.jpg');
   background-color: #ccc;
   background-repeat: no-repeat;
   background-size: cover;
