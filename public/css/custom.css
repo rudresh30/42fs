@@ -545,12 +545,16 @@ footer {
 
   .question{
     color: #3AEBEE;
+    margin-left: 5px;
   }
   .answer{
     color: #333;
+    margin-left: 5px;
   }
   .answer-list li{
     list-style: disc outside none;
+    
+    margin-left: 5px;
   }
 
 /**FAQ section */
