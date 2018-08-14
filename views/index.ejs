@@ -2,6 +2,15 @@
 <html>
 
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script nonce=<%= nonce %> async src="https://www.googletagmanager.com/gtag/js?id=UA-123916120-1"></script>
+<script nonce=<%= nonce %>>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-123916120-1');
+</script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="42 Fullstack static">
@@ -44,7 +53,7 @@
             <a class="nav-link" href="#method">Teaching Method</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#faqs">FAQ</a>
+            <a class="nav-link" href="#faqs">FAQs</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#cfp-footer">Contact Us</a>
@@ -492,7 +501,7 @@
       <div class="row">
         <div class="col-sm-12">
           <h3 class="col-sm-12 text-center">
-            FAQ
+            FAQs
           </h3>
         </div>
       </div>

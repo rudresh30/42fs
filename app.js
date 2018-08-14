@@ -20,10 +20,10 @@ app.set('views', path.join(__dirname, 'views'));
 const cspMiddleware = csp({
   policies: {
     'default-src': [csp.SELF],
-    'img-src': [csp.SELF],
+    'img-src': [csp.NONCE, csp.SELF, `www.google-analytics.com`],
     'font-src': [`fonts.googleapis.com`, `use.fontawesome.com`, `bootstrapcdn.com`, `maxcdn.bootstrapcdn.com`, `fonts.gstatic.com`],
     'style-src': [csp.NONCE, `fonts.googleapis.com`, `use.fontawesome.com`, `bootstrapcdn.com`, `maxcdn.bootstrapcdn.com`],
-    'script-src': [csp.NONCE, `jquery.com`, `cloudflare.com`, `bootstrapcdn.com`, `jsdelivr.net`, `'strict-dynamic'`, `'unsafe-inline'`],
+    'script-src': [csp.NONCE, `jquery.com`, `cloudflare.com`, `bootstrapcdn.com`, `jsdelivr.net`, `www.google-analytics.com`, `'strict-dynamic'`, `'unsafe-inline'`],
     'object-src': [csp.NONE],
     'block-all-mixed-content': true,
     'base-uri': [csp.NONE]
