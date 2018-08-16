@@ -4,7 +4,7 @@
 
 body{
   font-family: 'Raleway', sans-serif;
-  
+  overflow-x: hidden;
   line-height: 1.4rem;
   color: #444;
 }
@@ -37,7 +37,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
-  width: 100%;
+  
 }
 
 
@@ -122,7 +122,7 @@ a.mttreadlessbtn:hover {
   border: #34D2D4;
   box-shadow: 0 3px 0 0 #111111;
   border-radius: 24px;
-  width: auto;
+  
   min-width: 30vw;
   text-shadow: 1px 1px 1px #000;
 }
@@ -161,7 +161,7 @@ h1 {
 
 .sub-head {
   font-size: 1.0625rem;
-  color: #fff;
+  color: #3AEBEE;
   
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -174,12 +174,30 @@ h1 {
 }
 
 .decor{
-  color: #3AEBEE;
+  color: #ff7321;
+  
 }
 
 .smile{
   color: #ffff00;
+  font-size: 2rem;
 }
+
+.call-widget{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1.5rem;
+  align-self:flex-end;
+  float: right;
+  background-color: rgba(128, 128, 128, 0.4);
+  width: 170px;
+  height: 32px;
+  color: #333;
+  padding: 5px;
+  right: 5px;
+  
+}
+
 
 
 .typed-cursor{
@@ -195,6 +213,10 @@ h1 {
 
 .text-brand {
   font-size: 1rem;
+}
+
+#cfp-learning-areas{
+  margin-top: 32px;
 }
 
 .slider {
@@ -270,7 +292,7 @@ h1 {
 }
 
 #cfp-sf-btn {
-  width: auto;
+  
   min-width: 84vw;
   color: #ffffff;
   margin-top: 10px;
@@ -456,6 +478,9 @@ footer {
   background-color: #EAEAEA;
   color: #333;
   padding: 1rem;
+  margin-top: 72px;
+  
+  
 }
 
 #cfp-contact-foo p {
