@@ -46,7 +46,7 @@ app.get('/', function (req, res, next) {
   try {
     res.render('index', {
       nonce: req.nonce,
-      title: '42 Fullstack Academy'
+      title: '42 Fullstack Academy - Learn Javascript in Ahmedabad'
     });
   }
   catch (err) {
