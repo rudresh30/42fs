@@ -73,7 +73,7 @@ function validateInput(req, res, next) {
 
   req.checkBody('contactno', `Please provide a valid phone number`).isLength({ min: 8, max: 18 }).isNumeric();
 
-  req.checkBody('batch', `Please select a valid batch`).notEmpty().isIn([1, 2, 3]);
+  req.checkBody('batch', `Please select a valid batch`).notEmpty().isIn([1, 2, 3, 10]);
 
   req.getValidationResult()
     .then(function (results) {
