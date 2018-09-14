@@ -8,7 +8,7 @@ body{
   line-height: 1.5;
   color: #444;
   letter-spacing: 0.7px;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .fs-brand{
@@ -35,9 +35,10 @@ body{
 
 #main-hero-section {
   /**background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../images/technology-3.jpeg');*/
-  background-image: url('../images/office-1.jpeg');
+  background-image: url('../images/technology-hero.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   height: 80vh;
   
 }
@@ -110,7 +111,7 @@ a.mttreadlessbtn:hover {
 }
 
 .main-banner {
-  color: #fff;
+  color: #444;
   text-align: center;
   
   font-size: 0.5rem;
@@ -122,11 +123,11 @@ a.mttreadlessbtn:hover {
   margin-top: 1rem;
   background-color: #34D2D4;
   border: #34D2D4;
-  box-shadow: 0 3px 0 0 #111111;
+  box-shadow: 0 3px 0 0 rgba(0,0,0,0.25);
   border-radius: 24px;
   
   min-width: 30vw;
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 1px 1px #333;
 }
 
 #submit-button:hover {
@@ -155,8 +156,8 @@ a.mttreadlessbtn:hover {
 }
 
 h1 {
-  font-size: 2rem;
-  color: #fff;
+  font-size: 1.6rem;
+  color: #444;
   text-transform: uppercase;
   margin-top: 5px;
   letter-spacing: 0.3px;
@@ -706,7 +707,7 @@ footer {
     font-size: 1rem;
   }
   h1 {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
   .sub-head {
     font-size: 1.25rem;

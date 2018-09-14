@@ -272,7 +272,7 @@ $(document).ready(function () {
   $(window).resize(function () {
     if (Modernizr.mq('(min-width: 320px)')) {
       //$('#navbrand').html('42 Full Stack -xs');
-      $('#launch-tag').html('Batch Time: <b>Evening</b> ')
+      //$('#launch-tag').html('Batch Time: <b>Evening</b> ')
     }
   })
   //on small screens
