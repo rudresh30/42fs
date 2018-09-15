@@ -273,18 +273,27 @@ $(document).ready(function () {
     if (Modernizr.mq('(min-width: 320px)')) {
       //$('#navbrand').html('42 Full Stack -xs');
       //$('#launch-tag').html('Batch Time: <b>Evening</b> ')
+      let title = $('h1');
+      title.html('get the <strong>javascript</strong> advantage');
+      title.addClass('text-center');
     }
   })
   //on small screens
   $(window).resize(function () {
     if (Modernizr.mq('(min-width: 544px)')) {
       //$('#navbrand').html('42 Full Stack -mo');
+      let title = $('h1');
+      title.html('get the <strong>javascript</strong> advantage');
+      title.addClass('text-center');
     }
   })
   //on tablet size screens
   $(window).resize(function () {
     if (Modernizr.mq('(min-width: 768px)')) {
       //$('#navbrand').html('42 Full Stack -tab');
+      let title = $('h1');
+      title.html('get the <strong>javascript</strong> advantage');
+      title.addClass('text-center');
     }
   })
   //on laptops small desktops
@@ -292,6 +301,9 @@ $(document).ready(function () {
   $(window).resize(function () {
     if (Modernizr.mq('(min-width: 992px)')) {
       //$('#navbrand').html('42 Full Stack - lap');
+      let title = $('h1');
+      title.html('get the <strong>javascript</strong> advantage');
+      title.addClass('text-center');
     }
   })
   //on large desktops
@@ -299,6 +311,9 @@ $(document).ready(function () {
   $(window).resize(function () {
     if (Modernizr.mq('(min-width: 1200px)')) {
       //$('#navbrand').html('42 Full Stack -desk');
+      let title = $('h1');
+      title.html('get the <strong>javascript</strong> advantage');
+      title.addClass('text-center');
     }
   }).resize(); // causes an initial resize to occur
 });
