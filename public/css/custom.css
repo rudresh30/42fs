@@ -35,11 +35,11 @@ body{
 
 #main-hero-section {
   /**background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../images/technology-3.jpeg');*/
-  background-image: url('../images/technology-hero.jpg');
+  background-image: url('../images/Flat-Mountains.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  height: 80vh;
+  background-position: right bottom;
+  height: 100%;
   
 }
 
@@ -157,15 +157,16 @@ a.mttreadlessbtn:hover {
 
 h1 {
   font-size: 1.6rem;
-  color: #444;
+  color: #ffffff;
   text-transform: uppercase;
   margin-top: 5px;
   letter-spacing: 0.3px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
 }
 
 .sub-head {
   font-size: 16px;
-  color: #3AEBEE;
+  color: #ffffff;
   
   margin-top: 1rem;
   margin-bottom: 1rem;
