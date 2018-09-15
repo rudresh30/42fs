@@ -40,7 +40,7 @@ body{
   background-size: cover;
   background-position: right bottom;
   height: 500px;
-  
+  margin-bottom: 30px;
   
 }
 
@@ -207,6 +207,7 @@ h1 strong{
   padding: 5px;
   right: 5px;
   
+  
 }
 
 
@@ -225,6 +226,68 @@ h1 strong{
 .text-brand {
   font-size: 1rem;
 }
+
+
+/** course content */
+.course-content-container{
+  display: flex;
+  justify-content: space-around;
+width: 100%;
+position:relative;
+
+}
+.course-content-jq{
+  text-align: center;
+  height: 100%;
+  padding: 35px;
+}
+.cc-title h3{
+  margin-bottom: 40px;
+  align-self: center;
+  font-size: 2rem;
+}
+.course-content-jq h1{
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.course-content-frontend{
+  width: 40%;
+  font-size: 1.5rem;
+}
+.slash-container{
+  width: 20%;
+}
+.course-content-backend{
+  width:40%;
+  font-size: 1.5rem;
+}
+
+.course-content-frontend h3{
+  margin-bottom: 80px;
+}
+
+.course-content-frontend p{
+  margin-bottom: 80px;
+}
+
+.course-content-backend h3{
+  margin-bottom: 80px;
+}
+
+.course-content-backend p{
+  margin-bottom: 80px;
+}
+
+.slash{
+  width: 10px;
+  height: 90%;
+  transform: skew(-5deg);
+  color: #444;
+  background: rgba(255,119,0,1);
+  margin:auto;
+}
+/** course content */
+
 
 #cfp-learning-areas{
   margin-top: 32px;
