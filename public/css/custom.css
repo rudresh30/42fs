@@ -181,6 +181,7 @@ h1 strong{
   position: absolute;  
   top: 100px;
   left: 50%;
+  margin-right: -50%;
   transform: translate(-50%,-50%);
 }
 
@@ -242,8 +243,10 @@ position:relative;
   padding: 35px;
 }
 .cc-title h3{
-  margin-bottom: 40px;
-  align-self: center;
+  
+  text-align: center;
+  margin-bottom: 80px;
+  
   font-size: 2rem;
 }
 .course-content-jq h1{
@@ -267,7 +270,7 @@ position:relative;
 }
 
 .course-content-frontend p{
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .course-content-backend h3{
@@ -275,7 +278,7 @@ position:relative;
 }
 
 .course-content-backend p{
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .slash{
