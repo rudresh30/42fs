@@ -7,7 +7,7 @@ body{
   overflow-x: hidden;
   line-height: 1.5;
   color: #444;
-  letter-spacing: 0.7px;
+  letter-spacing: 0.3px;
   font-size: 16px;
 }
 
@@ -58,57 +58,57 @@ body{
 }
 
 #bootstrap-overrides a.lttreadmorebtn {
-  color: #3AEBEE;
+  color: hsla(28,100%,50%,1);
   cursor: pointer;
 }
 
 a.lttreadmorebtn:hover {
-  border-bottom: 1px blue solid;
+  border-bottom: 1px hsla(28,100%,70%,1);
 }
 
 a.lttreadlessbtn {
-  color: #3AEBEE !important;
+  color: hsla(28,100%,50%,1) !important;
   cursor: pointer;
 }
 
 a.lttreadlessbtn:hover {
-  border-bottom: 1px blue solid;
+  border-bottom: 1px hsla(28,100%,70%,1);
 }
 
 a.gtcreadmorebtn {
-  color: #3AEBEE !important;
+  color: hsla(28,100%,50%,1) !important;
   cursor: pointer;
 }
 
 a.gtcreadmorebtn:hover {
-  border-bottom: 1px blue solid;
+  border-bottom: 1px hsla(28,100%,70%,1);
 }
 
 a.gtcreadlessbtn {
-  color: #3AEBEE !important;
+  color: hsla(28,100%,50%,1) !important;
   cursor: pointer;
 }
 
 a.gtcreadlessbtn:hover {
-  border-bottom: 1px blue solid;
+  border-bottom: 1px hsla(28,100%,70%,1);
 }
 
 a.mttreadmorebtn {
-  color: #3AEBEE !important;
+  color: hsla(28,100%,50%,1) !important;
   cursor: pointer;
 }
 
 a.mttreadmorebtn:hover {
-  border-bottom: 1px blue solid;
+  border-bottom: 1px hsla(28,100%,70%,1);
 }
 
 a.mttreadlessbtn {
-  color: #3AEBEE !important;
+  color: hsla(28,100%,50%,1) !important;
   cursor: pointer;
 }
 
 a.mttreadlessbtn:hover {
-  border-bottom: 1px blue solid;
+  border-bottom: 1px hsla(28,100%,70%,1);
 }
 
 .main-banner {
@@ -186,7 +186,7 @@ h1 strong{
 }
 
 .decor{
-  color: #ff7321;
+  color: hsla(40,100%,50%,1);
   
 }
 
@@ -201,7 +201,7 @@ h1 strong{
   top: 1.5rem;
   align-self:flex-end;
   float: right;
-  background-color: rgba(128, 128, 128, 0.4);
+  background-color: hsla(28,100%,50%,0.5);
   width: 185px;
   height: 32px;
   color: #333;
@@ -282,11 +282,11 @@ position:relative;
 }
 
 .slash{
-  width: 10px;
+  width: 5px;
   height: 90%;
   transform: skew(-5deg);
   color: #444;
-  background: rgba(255,119,0,1);
+  background: hsla(28,100%,50%,1);
   margin:auto;
 }
 /** course content */
@@ -448,7 +448,7 @@ position:relative;
   border-left: none;
   border-right: none;
   border-top: none;
-  border-bottom: 0.5px solid #3AEBEE;
+  border-bottom: 0.5px solid hsla(28,100%,50%,1);
 }
 
 #cfp-contact-details label {
@@ -461,13 +461,13 @@ select{
   appearance: none;
   display: block;
   padding: 10px 50px 10px 10px;
-  background: url(../images/downward-arrow-8px.png) no-repeat 95% center;
+  background: url(../images/downward-triangle.png) no-repeat 95% center;
   align-content: center;
   align-items: center;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 0.5px solid #3AEBEE;
+  border-bottom: 0.5px solid hsla(28,100%,50%,1);
   font-style: normal;
   width:85vw;
   color: #333;
@@ -484,22 +484,22 @@ select{
 }
 
 .cfp-btn-submit{
-  background-color: #3AEBEE;
+  background-color: hsla(28,100%,50%,1);
   color: #ffffff;
-  text-shadow: 0.5px 0.5px 0.5px #111;
+  text-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.25);
   font-size: 2rem;
   min-width: 30vw;
   display: block;
   border-radius: 24px;
-  box-shadow: 0 3px 1px 0 #111111;
+  box-shadow: 0 3px 1px 0 rgba(0,0,0,0.25);
 }
 
 .cfp-btn-submit:hover {
-  background-color: #34D2D4;
+  background-color: hsla(28,100%,70%,1);
 }
 
 .cfp-btn-submit:active {
-  background-color: lighten(#34D2D4, 50%);
+  background-color: hsla(28,50%,50%,1);
   box-shadow: none;
   margin-bottom: -3px;
   margin-top: 3px;
@@ -537,7 +537,7 @@ select{
 }
 
 .method-title{
-  color: #3AEBEE;
+  color: hsla(28,100%,50%,1);
 }
 
 /** teaching method */
@@ -631,7 +631,7 @@ footer {
 
 .cfp-profile-name h5{
   text-transform: capitalize;
-  color: #3AEBEE;
+  color: hsla(28,100%,50%,1);
   display: flex;
   justify-content: center;
 }
@@ -646,7 +646,7 @@ footer {
 /**FAQ section */
 
   .question{
-    color: #3AEBEE;
+    color: hsla(28,100%,50%,1);
     margin-left: 5px;
   }
   .answer{
@@ -682,7 +682,7 @@ footer {
     min-width: 30vw;
   }
   #submit-button:active {
-    background-color: lighten(#34D2D4, 50%);
+    background-color: hsla(28,50%,50%,1);
     box-shadow: none;
     margin-bottom: -2.02rem;
     margin-top: 2.02rem;
@@ -710,7 +710,7 @@ footer {
     min-width: 25vw;
   }
   #submit-button:active {
-    background-color: lighten(#34D2D4, 50%);
+    background-color: hsla(28,50%,50%,1);
     box-shadow: none;
     margin-bottom: -2.52rem;
     margin-top: 2.52rem;
@@ -748,6 +748,10 @@ footer {
     font-size: 1rem;
     color: green;
   }
+.slash{
+  transform: skew(-15deg);
+}
+
   .main-banner {
     margin-top: 1rem;
   }
@@ -757,7 +761,7 @@ footer {
     width: 25vw;
   }
   #submit-button:active {
-    background-color: lighten(#34D2D4, 50%);
+    background-color: hsla(28,50%,70%,1);
     box-shadow: none;
     margin-bottom: -2.55rem;
     margin-top: 2.55rem;
@@ -803,7 +807,7 @@ footer {
     width: 20vw;
   }
   #submit-button:active {
-    background-color: lighten(#34D2D4, 50%);
+    background-color: hsla(28,50%,50%,1);
     box-shadow: none;
     margin-bottom: -6.01rem;
     margin-top: 6.01rem;
